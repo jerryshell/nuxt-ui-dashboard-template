@@ -1,0 +1,59 @@
+<script setup lang="ts">
+import type { DropdownMenuItem } from "@nuxt/ui";
+import type { Member } from "~/types";
+
+defineProps<{
+  members: Member[];
+}>();
+
+const items = [
+  {
+    label: "编辑成员",
+    onSelect: () => console.log("编辑成员"),
+  },
+  {
+    label: "移除成员",
+    color: "error" as const,
+    onSelect: () => console.log("移除成员"),
+  },
+] satisfies DropdownMenuItem[];
+</script>
+
+<template>
+  <ul role="list" class="divide-y divide-default">
+    <li
+      v-for="(member, index) in members"
+      :key="index"
+      class="flex items-center justify-between gap-3 py-3 px-4 sm:px-6"
+    >
+      <div class="flex items-center gap-3 min-w-0">
+        <UAvatar v-bind="member.avatar" size="md" />
+
+        <div class="text-sm min-w-0">
+          <p class="text-highlighted font-medium truncate">
+            {{ member.name }}
+          </p>
+          <p class="text-muted truncate">
+            {{ member.username }}
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <USelect
+          :model-value="member.role"
+          :items="[
+            { label: '成员', value: 'member' },
+            { label: '所有者', value: 'owner' },
+          ]"
+          color="neutral"
+          :ui="{ value: 'capitalize', item: 'capitalize' }"
+        />
+
+        <UDropdownMenu :items="items" :content="{ align: 'end' }">
+          <UButton icon="i-lucide-ellipsis-vertical" color="neutral" variant="ghost" />
+        </UDropdownMenu>
+      </div>
+    </li>
+  </ul>
+</template>

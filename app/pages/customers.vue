@@ -1,0 +1,347 @@
+<script setup lang="ts">
+import type { TableColumn } from "@nuxt/ui";
+import { upperFirst } from "scule";
+import { getPaginationRowModel } from "@tanstack/table-core";
+import type { Row } from "@tanstack/table-core";
+import type { User } from "~/types";
+
+const UAvatar = resolveComponent("UAvatar");
+const UButton = resolveComponent("UButton");
+const UBadge = resolveComponent("UBadge");
+const UDropdownMenu = resolveComponent("UDropdownMenu");
+const UCheckbox = resolveComponent("UCheckbox");
+
+const toast = useToast();
+const table = useTemplateRef("table");
+
+const columnFilters = ref([
+  {
+    id: "email",
+    value: "",
+  },
+]);
+const columnVisibility = ref();
+const rowSelection = ref({ 1: true });
+
+const { data, status } = await useFetch<User[]>("/api/customers", {
+  lazy: true,
+});
+
+function getRowItems(row: Row<User>) {
+  return [
+    {
+      type: "label",
+      label: "操作",
+    },
+    {
+      label: "复制客户 ID",
+      icon: "i-lucide-copy",
+      onSelect() {
+        navigator.clipboard.writeText(row.original.id.toString());
+        toast.add({
+          title: "已复制到剪贴板",
+          description: "客户 ID 已复制到剪贴板",
+        });
+      },
+    },
+    {
+      type: "separator",
+    },
+    {
+      label: "查看客户详情",
+      icon: "i-lucide-list",
+    },
+    {
+      label: "查看客户付款",
+      icon: "i-lucide-wallet",
+    },
+    {
+      type: "separator",
+    },
+    {
+      label: "删除客户",
+      icon: "i-lucide-trash",
+      color: "error",
+      onSelect() {
+        toast.add({
+          title: "客户已删除",
+          description: "该客户已被删除。",
+        });
+      },
+    },
+  ];
+}
+
+const columns: TableColumn<User>[] = [
+  {
+    id: "select",
+    header: ({ table }) =>
+      h(UCheckbox, {
+        modelValue: table.getIsSomePageRowsSelected()
+          ? "indeterminate"
+          : table.getIsAllPageRowsSelected(),
+        "onUpdate:modelValue": (value: boolean | "indeterminate") =>
+          table.toggleAllPageRowsSelected(!!value),
+        ariaLabel: "全选",
+      }),
+    cell: ({ row }) =>
+      h(UCheckbox, {
+        modelValue: row.getIsSelected(),
+        "onUpdate:modelValue": (value: boolean | "indeterminate") => row.toggleSelected(!!value),
+        ariaLabel: "选择行",
+      }),
+  },
+  {
+    accessorKey: "id",
+    header: "ID",
+  },
+  {
+    accessorKey: "name",
+    header: "姓名",
+    cell: ({ row }) => {
+      return h("div", { class: "flex items-center gap-3" }, [
+        h(UAvatar, {
+          ...row.original.avatar,
+          size: "lg",
+        }),
+        h("div", undefined, [
+          h("p", { class: "font-medium text-highlighted" }, row.original.name),
+          h("p", { class: "" }, `@${row.original.name}`),
+        ]),
+      ]);
+    },
+  },
+  {
+    accessorKey: "email",
+    header: ({ column }) => {
+      const isSorted = column.getIsSorted();
+
+      return h(UButton, {
+        color: "neutral",
+        variant: "ghost",
+        label: "邮箱",
+        icon: isSorted
+          ? isSorted === "asc"
+            ? "i-lucide-arrow-up-narrow-wide"
+            : "i-lucide-arrow-down-wide-narrow"
+          : "i-lucide-arrow-up-down",
+        class: "-mx-2.5",
+        onClick: () => column.toggleSorting(column.getIsSorted() === "asc"),
+      });
+    },
+  },
+  {
+    accessorKey: "location",
+    header: "地区",
+    cell: ({ row }) => row.original.location,
+  },
+  {
+    accessorKey: "status",
+    header: "状态",
+    filterFn: "equals",
+    cell: ({ row }) => {
+      const color = {
+        subscribed: "success" as const,
+        unsubscribed: "error" as const,
+        bounced: "warning" as const,
+      }[row.original.status];
+
+      const label = {
+        subscribed: "已订阅",
+        unsubscribed: "已取消订阅",
+        bounced: "退信",
+      }[row.original.status];
+
+      return h(UBadge, { class: "capitalize", variant: "subtle", color }, () => label);
+    },
+  },
+  {
+    id: "actions",
+    cell: ({ row }) => {
+      return h(
+        "div",
+        { class: "text-right" },
+        h(
+          UDropdownMenu,
+          {
+            content: {
+              align: "end",
+            },
+            items: getRowItems(row),
+          },
+          () =>
+            h(UButton, {
+              icon: "i-lucide-ellipsis-vertical",
+              color: "neutral",
+              variant: "ghost",
+              class: "ml-auto",
+            }),
+        ),
+      );
+    },
+  },
+];
+
+const statusFilter = ref("all");
+
+watch(
+  () => statusFilter.value,
+  (newVal) => {
+    if (!table?.value?.tableApi) return;
+
+    const statusColumn = table.value.tableApi.getColumn("status");
+    if (!statusColumn) return;
+
+    if (newVal === "all") {
+      statusColumn.setFilterValue(undefined);
+    } else {
+      statusColumn.setFilterValue(newVal);
+    }
+  },
+);
+
+const email = computed({
+  get: (): string => {
+    return (table.value?.tableApi?.getColumn("email")?.getFilterValue() as string) || "";
+  },
+  set: (value: string) => {
+    table.value?.tableApi?.getColumn("email")?.setFilterValue(value || undefined);
+  },
+});
+
+const pagination = ref({
+  pageIndex: 0,
+  pageSize: 10,
+});
+</script>
+
+<template>
+  <UDashboardPanel id="customers">
+    <template #header>
+      <UDashboardNavbar title="客户">
+        <template #leading>
+          <UDashboardSidebarCollapse />
+        </template>
+
+        <template #right>
+          <CustomersAddModal />
+        </template>
+      </UDashboardNavbar>
+    </template>
+
+    <template #body>
+      <div class="flex flex-wrap items-center justify-between gap-1.5">
+        <UInput v-model="email" class="max-w-sm" icon="i-lucide-search" placeholder="筛选邮箱..." />
+
+        <div class="flex flex-wrap items-center gap-1.5">
+          <CustomersDeleteModal :count="table?.tableApi?.getFilteredSelectedRowModel().rows.length">
+            <UButton
+              v-if="table?.tableApi?.getFilteredSelectedRowModel().rows.length"
+              label="删除"
+              color="error"
+              variant="subtle"
+              icon="i-lucide-trash"
+            >
+              <template #trailing>
+                <UKbd>
+                  {{ table?.tableApi?.getFilteredSelectedRowModel().rows.length }}
+                </UKbd>
+              </template>
+            </UButton>
+          </CustomersDeleteModal>
+
+          <USelect
+            v-model="statusFilter"
+            :items="[
+              { label: '全部', value: 'all' },
+              { label: '已订阅', value: 'subscribed' },
+              { label: '已取消订阅', value: 'unsubscribed' },
+              { label: '退信', value: 'bounced' },
+            ]"
+            :ui="{
+              trailingIcon: 'group-data-[state=open]:rotate-180 transition-transform duration-200',
+            }"
+            placeholder="筛选状态"
+            class="min-w-28"
+          />
+          <UDropdownMenu
+            :items="
+              table?.tableApi
+                ?.getAllColumns()
+                .filter((column: any) => column.getCanHide())
+                .map((column: any) => ({
+                  label:
+                    (
+                      {
+                        select: '选择',
+                        id: 'ID',
+                        name: '姓名',
+                        email: '邮箱',
+                        location: '地区',
+                        status: '状态',
+                        actions: '操作',
+                      } as Record<string, string>
+                    )[column.id] || upperFirst(column.id),
+                  type: 'checkbox' as const,
+                  checked: column.getIsVisible(),
+                  onUpdateChecked(checked: boolean) {
+                    table?.tableApi?.getColumn(column.id)?.toggleVisibility(!!checked);
+                  },
+                  onSelect(e?: Event) {
+                    e?.preventDefault();
+                  },
+                }))
+            "
+            :content="{ align: 'end' }"
+          >
+            <UButton
+              label="显示"
+              color="neutral"
+              variant="outline"
+              trailing-icon="i-lucide-settings-2"
+            />
+          </UDropdownMenu>
+        </div>
+      </div>
+
+      <UTable
+        ref="table"
+        v-model:column-filters="columnFilters"
+        v-model:column-visibility="columnVisibility"
+        v-model:row-selection="rowSelection"
+        v-model:pagination="pagination"
+        :pagination-options="{
+          getPaginationRowModel: getPaginationRowModel(),
+        }"
+        class="shrink-0"
+        :data="data"
+        :columns="columns"
+        :loading="status === 'pending'"
+        :ui="{
+          base: 'table-fixed border-separate border-spacing-0',
+          thead: '[&>tr]:bg-elevated/50 [&>tr]:after:content-none',
+          tbody: '[&>tr]:last:[&>td]:border-b-0',
+          th: 'py-2 first:rounded-l-lg last:rounded-r-lg border-y border-default first:border-l last:border-r',
+          td: 'border-b border-default',
+          separator: 'h-0',
+        }"
+      />
+
+      <div class="flex items-center justify-between gap-3 border-t border-default pt-4 mt-auto">
+        <div class="text-sm text-muted">
+          {{ table?.tableApi?.getFilteredSelectedRowModel().rows.length || 0 }} /
+          {{ table?.tableApi?.getFilteredRowModel().rows.length || 0 }} 行已选择
+        </div>
+
+        <div class="flex items-center gap-1.5">
+          <UPagination
+            :default-page="(table?.tableApi?.getState().pagination.pageIndex || 0) + 1"
+            :items-per-page="table?.tableApi?.getState().pagination.pageSize"
+            :total="table?.tableApi?.getFilteredRowModel().rows.length"
+            @update:page="(p: number) => table?.tableApi?.setPageIndex(p - 1)"
+          />
+        </div>
+      </div>
+    </template>
+  </UDashboardPanel>
+</template>
