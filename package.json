@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-ui-dashboard-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "oxlint .",
+    "format": "oxfmt .",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.117",
+    "@internationalized/date": "^3.12.2",
+    "@nuxt/ui": "^4.10.0",
+    "@tanstack/table-core": "^8.21.3",
+    "@unovis/vue": "^1.6.7",
+    "@vueuse/nuxt": "^14.3.0",
+    "nuxt": "^4.4.8",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.59.0",
+    "oxlint": "^1.74.0",
+    "tailwindcss": "^4.3.2"
+  }
+}
