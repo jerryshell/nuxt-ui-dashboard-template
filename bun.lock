@@ -5,22 +5,26 @@
     "": {
       "name": "nuxt-ui-dashboard-template",
       "dependencies": {
-        "@iconify-json/lucide": "^1.2.117",
+        "@iconify-json/lucide": "^1.2.118",
         "@internationalized/date": "^3.12.2",
         "@nuxt/ui": "^4.10.0",
         "@tanstack/table-core": "^8.21.3",
         "@unovis/vue": "^1.6.7",
         "@vueuse/nuxt": "^14.3.0",
-        "nuxt": "^4.4.8",
+        "nuxt": "^4.5.0",
         "zod": "^4.4.3",
       },
       "devDependencies": {
-        "oxfmt": "^0.59.0",
-        "oxlint": "^1.74.0",
-        "tailwindcss": "^4.3.2",
+        "oxfmt": "^0.60.0",
+        "oxlint": "^1.75.0",
+        "tailwindcss": "^4.3.3",
         "vue-tsc": "^3.3.7",
       },
     },
+  },
+  "overrides": {
+    "@unhead/vue": "3.2.1",
+    "unhead": "3.2.1",
   },
   "packages": {
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "https://registry.npmmirror.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz", {}, "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="],
@@ -93,7 +97,7 @@
 
     "@colordx/core": ["@colordx/core@5.5.0", "https://registry.npmmirror.com/@colordx/core/-/core-5.5.0.tgz", {}, "sha512-3PxTH8itZzltK0U9jTwVVnjLXvnDYuq3m+QXsHkENxWiPRh4WaoLcs1SQjqgZ55kS+QyirpH5BVwzP2gMVG6EQ=="],
 
-    "@devframes/hub": ["@devframes/hub@0.7.9", "https://registry.npmmirror.com/@devframes/hub/-/hub-0.7.9.tgz", { "dependencies": { "birpc": "^4.0.0", "destr": "^2.0.5", "nostics": "^1.2.0", "pathe": "^2.0.3", "perfect-debounce": "^2.1.0", "tinyexec": "^1.2.4", "zigpty": "^0.2.1" }, "peerDependencies": { "devframe": "0.7.9" } }, "sha512-+tARSZfwkzez6RKA8ShlntAmfKTn7Z+IM2xwDilNMze5YO+E4n/WmaJBYZL2VvXdDiWB0cJbbwHto+vsrEQB9g=="],
+    "@devframes/hub": ["@devframes/hub@0.5.4", "https://registry.npmmirror.com/@devframes/hub/-/hub-0.5.4.tgz", { "dependencies": { "birpc": "^4.0.0", "nostics": "^0.2.0", "pathe": "^2.0.3", "perfect-debounce": "^2.1.0", "tinyexec": "^1.2.2" }, "peerDependencies": { "devframe": "0.5.4" } }, "sha512-NZs5RFuNb6tjQd2JBsRYQT+OqE+z16Kg9/72HG4k+uJdzK90sAGtAjOwK8bsvav/9l85KGx4agfkgxnfbl313w=="],
 
     "@dxup/nuxt": ["@dxup/nuxt@0.5.3", "https://registry.npmmirror.com/@dxup/nuxt/-/nuxt-0.5.3.tgz", { "dependencies": { "@dxup/unimport": "^0.1.2", "@nuxt/kit": "^4.4.8", "@vue/compiler-dom": "^3.5.39", "chokidar": "^5.0.0", "knitwork": "^1.3.0", "magic-string": "^0.30.21", "pathe": "^2.0.3", "tinyglobby": "^0.2.17", "unplugin": "^3.3.0" } }, "sha512-PRwX3kEDjZF4t+j+lWbhFSZ1WBklwFSus5byNtkCL2PgWoUMbywNtewJcUHVSOQdwEYsbD1H/md3e/CKaTvDyw=="],
 
@@ -319,43 +323,43 @@
 
     "@oxc-project/types": ["@oxc-project/types@0.140.0", "https://registry.npmmirror.com/@oxc-project/types/-/types-0.140.0.tgz", {}, "sha512-h5LUOzGArYemnW1NMz/DuuQhBi96J6JL2Bk8zE4kvqxB5Sg3jxmCiH4uyOWHDkiKSt5vWlG4FIwCR/DbstcNRQ=="],
 
-    "@oxfmt/binding-android-arm-eabi": ["@oxfmt/binding-android-arm-eabi@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-android-arm-eabi/-/binding-android-arm-eabi-0.59.0.tgz", { "os": "android", "cpu": "arm" }, "sha512-bNTnfbuG7sAwb2PakMNaDukx5kXeW9duXOBeWtTOiLz3fXz3q2DlWguufPZ+c2IHEVrRXHD+M4aUgEWm841LDA=="],
+    "@oxfmt/binding-android-arm-eabi": ["@oxfmt/binding-android-arm-eabi@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-android-arm-eabi/-/binding-android-arm-eabi-0.60.0.tgz", { "os": "android", "cpu": "arm" }, "sha512-1q4q4Jc8FlOMVojEisyFAVyl8h1yawNv6phjgmhGVEDeyeOdsSnSr9x0+D4mOnEKvpO5L4mxKZ/DP9X6U3A/Mw=="],
 
-    "@oxfmt/binding-android-arm64": ["@oxfmt/binding-android-arm64@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-android-arm64/-/binding-android-arm64-0.59.0.tgz", { "os": "android", "cpu": "arm64" }, "sha512-R/Sn7z52QtdAKNqQLLY0EK7hVMjXiz3XUlvoCFCm/60jgIzAnQtiqLKBCFaBkimCQL5rs2ezPMcicpjCsrl54Q=="],
+    "@oxfmt/binding-android-arm64": ["@oxfmt/binding-android-arm64@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-android-arm64/-/binding-android-arm64-0.60.0.tgz", { "os": "android", "cpu": "arm64" }, "sha512-tD41I6nCt9k8SQXft0CSjjU9jg6SwG7uMu7PxodSEHXl+GDW0868oy6tTtoJkyUze8YKFgTpz/k5LuPUnFiGLw=="],
 
-    "@oxfmt/binding-darwin-arm64": ["@oxfmt/binding-darwin-arm64@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-darwin-arm64/-/binding-darwin-arm64-0.59.0.tgz", { "os": "darwin", "cpu": "arm64" }, "sha512-vm/ynUqE4HjC0ZIEjmXv1UJu1/GngccQ+T+TJudTMxUxm6r+GQTg1TO3E5jJfI71pBaXxSzs1+vWHIwuilGHhw=="],
+    "@oxfmt/binding-darwin-arm64": ["@oxfmt/binding-darwin-arm64@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-darwin-arm64/-/binding-darwin-arm64-0.60.0.tgz", { "os": "darwin", "cpu": "arm64" }, "sha512-TTpzPug96Zxdyb46KvTyIUQDdsqbumXh2TKG9C23PCT0kF7JkW56Z/quPuG9rqOFKQIi1gpRNZ7DX18LwxXPnw=="],
 
-    "@oxfmt/binding-darwin-x64": ["@oxfmt/binding-darwin-x64@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-darwin-x64/-/binding-darwin-x64-0.59.0.tgz", { "os": "darwin", "cpu": "x64" }, "sha512-uTtYDpLN/obfKVWGpgEc8BqYlLZBQTPz2uYEvLRy3HPZxjZ34wiFzukUBU2bf64JuCYZI//GTV1EOMmWlPjf/w=="],
+    "@oxfmt/binding-darwin-x64": ["@oxfmt/binding-darwin-x64@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-darwin-x64/-/binding-darwin-x64-0.60.0.tgz", { "os": "darwin", "cpu": "x64" }, "sha512-CnOoWgQ7L+JL/YQaRJ+NyATciSfcftncm7y3kqyte1cGtFEGnStaCd1TAyrinkfQ7nRBfHrTs1/vTwUJr3WF2Q=="],
 
-    "@oxfmt/binding-freebsd-x64": ["@oxfmt/binding-freebsd-x64@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-freebsd-x64/-/binding-freebsd-x64-0.59.0.tgz", { "os": "freebsd", "cpu": "x64" }, "sha512-e2UnxL/ifStSPy8ffBCDbdy595SYsGy+U1pur4G65TuMmWxAMBzYGG7atZo/3mp515p8rZdsflxVD/E1FAdPLQ=="],
+    "@oxfmt/binding-freebsd-x64": ["@oxfmt/binding-freebsd-x64@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-freebsd-x64/-/binding-freebsd-x64-0.60.0.tgz", { "os": "freebsd", "cpu": "x64" }, "sha512-ychJo7S3hZxdO6eDZ9zM6F2lM9fpJS3EKS5CAUSWyprdLYxTu4gbaUKV/VBPTcMJwQa2Bpo+643y3OJ537pihA=="],
 
-    "@oxfmt/binding-linux-arm-gnueabihf": ["@oxfmt/binding-linux-arm-gnueabihf@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.59.0.tgz", { "os": "linux", "cpu": "arm" }, "sha512-LtdeZ1l0urxte3VNi3g8cocZwv1xGM1NKHSgF/fJEEVhyQmlgGh7WFWKFd/pNuO7djfvPNtNO1+MS+FEWkgVSA=="],
+    "@oxfmt/binding-linux-arm-gnueabihf": ["@oxfmt/binding-linux-arm-gnueabihf@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.60.0.tgz", { "os": "linux", "cpu": "arm" }, "sha512-36IH5o55T2Fx7E0feDttt+mifxN6yk9pWv4KfhAIsP0dFnUq27331OwbpOsZdoXF9soOLWm7mQUz5+UUmyec4g=="],
 
-    "@oxfmt/binding-linux-arm-musleabihf": ["@oxfmt/binding-linux-arm-musleabihf@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.59.0.tgz", { "os": "linux", "cpu": "arm" }, "sha512-dBTciSsj9GTMl7p+h2gMSI0hoPn2ijfc/dUsbnWsP0RbwgPl2r0C/5zkMb3Pb+gGj17LH7f1o4qLo9aes/pAvA=="],
+    "@oxfmt/binding-linux-arm-musleabihf": ["@oxfmt/binding-linux-arm-musleabihf@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.60.0.tgz", { "os": "linux", "cpu": "arm" }, "sha512-G1Ve7lAa6sFBolVI2LWHfEAqy0YKh4vnioH8uYO9kAEdgM7mR40IksIx9/Zk4+vbYew/sGa4J9Q4tZ3n9gXDHA=="],
 
-    "@oxfmt/binding-linux-arm64-gnu": ["@oxfmt/binding-linux-arm64-gnu@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.59.0.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-tXVdJ/JINsNWdponPHN0OuKHtC+HdpyoS9sd6IDPNiiEYsRki8b7tefRZ1iMnRkdbyT4SEbguWsr6o+5awvbPQ=="],
+    "@oxfmt/binding-linux-arm64-gnu": ["@oxfmt/binding-linux-arm64-gnu@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.60.0.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-LTQdRBf6uzj/h7Xk6lKzbGD2hrF/fK4YI9LIN1c0509tPUn8wRa3mCmrFQpEWJPLYGFrLFFMTYW1Ljj6VqW2Hw=="],
 
-    "@oxfmt/binding-linux-arm64-musl": ["@oxfmt/binding-linux-arm64-musl@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.59.0.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-RRTq38i2zT5fnw6XGHjvT6w2mh6x/G3m6AZcAZ56OTDTT/lsOeYnG3SVjwmH40z5kPqF+lf+o35e6m6PpKy9Dw=="],
+    "@oxfmt/binding-linux-arm64-musl": ["@oxfmt/binding-linux-arm64-musl@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.60.0.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-2JMo3XPxMPx3hiqddSZYyaH+fKJm6cz0u8n1naYjP/CdOQOZW34i8lKBUfmbWiuFvd6KoYXLmhAyBuvojsYS7Q=="],
 
-    "@oxfmt/binding-linux-ppc64-gnu": ["@oxfmt/binding-linux-ppc64-gnu@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.59.0.tgz", { "os": "linux", "cpu": "ppc64" }, "sha512-lD3k7glAJSaXW0D6xzu8VOZbYbosvy+0ktOVkfLEoQF5HJlMSxTQ2KNW0JO+08ccP/1ElOKktVEMI0fqRbVB4w=="],
+    "@oxfmt/binding-linux-ppc64-gnu": ["@oxfmt/binding-linux-ppc64-gnu@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.60.0.tgz", { "os": "linux", "cpu": "ppc64" }, "sha512-L3C+nBD13lr306tr/PjM3RMll+BVqgFrIgUyoeHuai5oueJrRLgO3j+GO5/Cbhtkf5PSlHYTI1JY7iqBd1qa6A=="],
 
-    "@oxfmt/binding-linux-riscv64-gnu": ["@oxfmt/binding-linux-riscv64-gnu@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.59.0.tgz", { "os": "linux", "cpu": "none" }, "sha512-WH5ZP1RbuHKBO/yfPRQKpNO/ijHcEDNbnmC4VPf/Bcd3+mbMAZpRiJWRa1PL5bREdIZZHo343mk3sqlc9x7Usw=="],
+    "@oxfmt/binding-linux-riscv64-gnu": ["@oxfmt/binding-linux-riscv64-gnu@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.60.0.tgz", { "os": "linux", "cpu": "none" }, "sha512-M4MsmvqlxFiPtSRGyBYQSZxchEf463AOyd+Dh4/9xDpjWBsRtDUTDMFN5EdHinjVK1/eDJQ8MLpcYjpYayaCnA=="],
 
-    "@oxfmt/binding-linux-riscv64-musl": ["@oxfmt/binding-linux-riscv64-musl@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.59.0.tgz", { "os": "linux", "cpu": "none" }, "sha512-743wOiaI9RZY4QVGkWkfGRavD5ZJUJ6gscFjVrVu1dP8AZh9jM+a6v3NhlR+OIzHdS6DhLM96w+gcVskskz7rw=="],
+    "@oxfmt/binding-linux-riscv64-musl": ["@oxfmt/binding-linux-riscv64-musl@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.60.0.tgz", { "os": "linux", "cpu": "none" }, "sha512-OH+9UskYuxRB+GxqdGkVN8f5UpwhqG8YscNo1wl8+KJ62cd7wZdGga6iGLJIf8kibF1WBwvlfDUx3cez/VXwFg=="],
 
-    "@oxfmt/binding-linux-s390x-gnu": ["@oxfmt/binding-linux-s390x-gnu@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.59.0.tgz", { "os": "linux", "cpu": "s390x" }, "sha512-xjRXQsRnrRZCcCkIEnbd2lmsQNobtwwkJxdy2bWXhZ1lIN0ouZwsBXRsoovW3yATuziAYwr9HMiQuR/Cc75NIw=="],
+    "@oxfmt/binding-linux-s390x-gnu": ["@oxfmt/binding-linux-s390x-gnu@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.60.0.tgz", { "os": "linux", "cpu": "s390x" }, "sha512-y7AAFutt9wFWBFOAn6+BHaV39usZmcr3YYH2385f+NHgPNpIF9HpqKp0jgUxPaUOCyG3oaX5VhJduL1Nw164rw=="],
 
-    "@oxfmt/binding-linux-x64-gnu": ["@oxfmt/binding-linux-x64-gnu@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.59.0.tgz", { "os": "linux", "cpu": "x64" }, "sha512-4hNjqq/Rbr9B+StY9zMMAfm72+mtM4v80xYL5Qkb59Qd72g2vJMI0iFlPj3kf6miMsie/yJ7rt4urJT292HBgA=="],
+    "@oxfmt/binding-linux-x64-gnu": ["@oxfmt/binding-linux-x64-gnu@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.60.0.tgz", { "os": "linux", "cpu": "x64" }, "sha512-yKZ9+CXAI+1RO5nH/4Z/9M6DAsfOzd5bw/gtWk81KB4mpalMaRRSXfouc5/tHxazDmBek55HNPepNYBgaCew0Q=="],
 
-    "@oxfmt/binding-linux-x64-musl": ["@oxfmt/binding-linux-x64-musl@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-x64-musl/-/binding-linux-x64-musl-0.59.0.tgz", { "os": "linux", "cpu": "x64" }, "sha512-NH579iN8EVQYsWowUB8B5vFchcylJtwPVJ7NmUAqEQHNLfhPbDT3K56KrECNAkUN4QpF4qiMgN2vsfZwVvjm7g=="],
+    "@oxfmt/binding-linux-x64-musl": ["@oxfmt/binding-linux-x64-musl@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-linux-x64-musl/-/binding-linux-x64-musl-0.60.0.tgz", { "os": "linux", "cpu": "x64" }, "sha512-bCUGaF6hJOYnQzLJdHLZbvGsOd5oSvGAyJhPAKum2uyLYUuXmP8vqg690DWi2hqcnIoYpqSqCrjzE5aiUAgwQg=="],
 
-    "@oxfmt/binding-openharmony-arm64": ["@oxfmt/binding-openharmony-arm64@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-openharmony-arm64/-/binding-openharmony-arm64-0.59.0.tgz", { "os": "none", "cpu": "arm64" }, "sha512-mzZy3Z5Aj1D75Aq9FVlmoRQH5ei8Ga4o/NZmlXkKyeZ5EmPrUXRR7c6BMBteV1ZuZ/356UYDuLRLjAMxTDTiBA=="],
+    "@oxfmt/binding-openharmony-arm64": ["@oxfmt/binding-openharmony-arm64@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-openharmony-arm64/-/binding-openharmony-arm64-0.60.0.tgz", { "os": "none", "cpu": "arm64" }, "sha512-GrUeZOvzP30ExxfCuQiyofuUGI+OmvAgFwOO5w5p9mGPlxcyuqI+6Sy9fAKFFfLQrqKYWFgc5sYA2Unj/29nPg=="],
 
-    "@oxfmt/binding-win32-arm64-msvc": ["@oxfmt/binding-win32-arm64-msvc@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.59.0.tgz", { "os": "win32", "cpu": "arm64" }, "sha512-0CpDJ1gE3jN1Gk6xms1Ie6LPfPcOtY4FAtoOmVLHQoAf8DvO2wd0DW2dIX2f7YTp5dxrr0ND8JeUEjm3DP3k5g=="],
+    "@oxfmt/binding-win32-arm64-msvc": ["@oxfmt/binding-win32-arm64-msvc@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.60.0.tgz", { "os": "win32", "cpu": "arm64" }, "sha512-WD4Q954kUl2TDJV/6q7UnE2rlKk047kXLJsr4bJ2mXRaAqNXcmV3nwKUsGCc3mz/jYDBnXtJEaBErJEybK8iQQ=="],
 
-    "@oxfmt/binding-win32-ia32-msvc": ["@oxfmt/binding-win32-ia32-msvc@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.59.0.tgz", { "os": "win32", "cpu": "ia32" }, "sha512-zwdKBu3pt87uW0bRcywZb0oGMS7C6n87qogwRYFUgmk44T90ZzYlPjtlFYXs/DnBFrgNCvlHwCuWKfVWLeE7kw=="],
+    "@oxfmt/binding-win32-ia32-msvc": ["@oxfmt/binding-win32-ia32-msvc@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.60.0.tgz", { "os": "win32", "cpu": "ia32" }, "sha512-HqDekjr8JXzVDUP1YthDZ1Y3CBEcuZT4WX3B+1kaxj8CvZA8Y2YhcEsXqoSop3tVsgjACxjnFQFDkBo0r/jq1Q=="],
 
-    "@oxfmt/binding-win32-x64-msvc": ["@oxfmt/binding-win32-x64-msvc@0.59.0", "https://registry.npmmirror.com/@oxfmt/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.59.0.tgz", { "os": "win32", "cpu": "x64" }, "sha512-dUUbZkKgWrmAeI/puzv4bxN8lzcYaFnQVwFTFtwO2Gp8M7lZGSE2qJjC58g518+1bltJ8mizjYwD0BGHym0l/w=="],
+    "@oxfmt/binding-win32-x64-msvc": ["@oxfmt/binding-win32-x64-msvc@0.60.0", "https://registry.npmmirror.com/@oxfmt/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.60.0.tgz", { "os": "win32", "cpu": "x64" }, "sha512-tz78yhmGPKboTMHCHSaUqXK8JrmoSejgDcWeqAtg2s07ZGKQ3rH5Jn8NuXPGNG33CDbY2e9NoQWXIVEmKO21Rw=="],
 
     "@oxlint/binding-android-arm-eabi": ["@oxlint/binding-android-arm-eabi@1.75.0", "https://registry.npmmirror.com/@oxlint/binding-android-arm-eabi/-/binding-android-arm-eabi-1.75.0.tgz", { "os": "android", "cpu": "arm" }, "sha512-lutovtFzJqlRaqpZrCqSSGaHZzl9nIxxpjLzhSRLunN6dCLylj0uzlCyQGaQDIys7rrv8kVXiFO+R4Zpn0bX7g=="],
 
@@ -741,9 +745,49 @@
 
     "@types/web-bluetooth": ["@types/web-bluetooth@0.0.21", "https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.21.tgz", {}, "sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA=="],
 
-    "@unhead/bundler": ["@unhead/bundler@3.2.2", "https://registry.npmmirror.com/@unhead/bundler/-/bundler-3.2.2.tgz", { "dependencies": { "@vitejs/devtools-kit": "^0.4.1", "magic-string": "^1.0.0", "oxc-parser": "^0.140.0", "oxc-walker": "^1.0.0", "ufo": "^1.6.4", "unplugin": "^3.3.0" }, "peerDependencies": { "@unhead/cli": "^3.2.2", "esbuild": ">=0.17.0", "lightningcss": ">=1.20.0", "rolldown": ">=1.0.0-beta.0", "unhead": "^3.2.2", "vite": ">=6.4.2", "webpack": ">=5.0.0" }, "optionalPeers": ["@unhead/cli", "esbuild", "lightningcss", "rolldown", "vite", "webpack"] }, "sha512-cJN85JdoS5BGzTPfijNvTefnjrwVBmNf3ZTIADFMF54zbh1Zfd9ggC+zql0n+QKDIP/EYYrB73mtvLp/UeMgcQ=="],
+    "@typescript/typescript-aix-ppc64": ["@typescript/typescript-aix-ppc64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-aix-ppc64/-/typescript-aix-ppc64-7.0.2.tgz", { "os": "aix", "cpu": "ppc64" }, "sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ=="],
 
-    "@unhead/vue": ["@unhead/vue@2.1.16", "https://registry.npmmirror.com/@unhead/vue/-/vue-2.1.16.tgz", { "dependencies": { "hookable": "^6.0.1", "unhead": "2.1.16" }, "peerDependencies": { "vue": ">=3.5.18" } }, "sha512-t6QykImeMJcrUTbFB0Coy0cB/OZItHdQFRFLoH8GAVXKWmQORGPrwvueP9me7adOCuMH2uVvrv0nCkbi6zksaA=="],
+    "@typescript/typescript-darwin-arm64": ["@typescript/typescript-darwin-arm64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-darwin-arm64/-/typescript-darwin-arm64-7.0.2.tgz", { "os": "darwin", "cpu": "arm64" }, "sha512-gowzar9MwS/aRWp6f3a4KUqzRjAZjOsmGNCM6LcTgXum+dBfgsBVMN+AgvOCCbguXyick6LJhpBszxMebJ8syA=="],
+
+    "@typescript/typescript-darwin-x64": ["@typescript/typescript-darwin-x64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-darwin-x64/-/typescript-darwin-x64-7.0.2.tgz", { "os": "darwin", "cpu": "x64" }, "sha512-SZ9xZInqApNlNGc9s0W1VSsktYSOe9cFqNOIqmN1Gs8SmkjKZYFt017G4VwPxASInODuAdbTW7sXiFUf893RgA=="],
+
+    "@typescript/typescript-freebsd-arm64": ["@typescript/typescript-freebsd-arm64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-freebsd-arm64/-/typescript-freebsd-arm64-7.0.2.tgz", { "os": "freebsd", "cpu": "arm64" }, "sha512-W5NH4y/J0plIIS5b2xvTEkU7JFxyqdMAOgf+Ilhl0vHQXKO5dZoxd+C/jEtq56c4F3wk71RB4BMRQ2XdI+bwYQ=="],
+
+    "@typescript/typescript-freebsd-x64": ["@typescript/typescript-freebsd-x64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-freebsd-x64/-/typescript-freebsd-x64-7.0.2.tgz", { "os": "freebsd", "cpu": "x64" }, "sha512-UMGDx5sTpzNw3WiPebH7l90IWfJggEd+egHt/q6p7/Cm3zqoV7VxkGXt+3DxPIw8CcmvAB0j3sVVfbhX+M4Tpw=="],
+
+    "@typescript/typescript-linux-arm": ["@typescript/typescript-linux-arm@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-linux-arm/-/typescript-linux-arm-7.0.2.tgz", { "os": "linux", "cpu": "arm" }, "sha512-gffT3xPz9sR7j/YJExkyPntrI0P2EP9XbOyWzth2/Gs0RstK+90RBcO0ncXoXy/beYll1SXw846Nf2zdnEz0QQ=="],
+
+    "@typescript/typescript-linux-arm64": ["@typescript/typescript-linux-arm64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-linux-arm64/-/typescript-linux-arm64-7.0.2.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-Qh4eU4/y3yDjnfjjyPYihMj5/ODIlmt+Bzu17OI+fiSRDW57QmU5SiN63exPRNJPKUzcc1INa1NXdrJ+MqHjUQ=="],
+
+    "@typescript/typescript-linux-loong64": ["@typescript/typescript-linux-loong64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-linux-loong64/-/typescript-linux-loong64-7.0.2.tgz", { "os": "linux", "cpu": "none" }, "sha512-uEHck9i8hoAzXPiYRib1O7miOnz23SxIeVl6F4LXox+qov1K35jHcEW6VHKvZI+pyvl7fZEP4MCU5LYvIq1GuQ=="],
+
+    "@typescript/typescript-linux-mips64el": ["@typescript/typescript-linux-mips64el@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-linux-mips64el/-/typescript-linux-mips64el-7.0.2.tgz", { "os": "linux", "cpu": "none" }, "sha512-R4KvAMnE43W5Qeqb0Ly56O3mWMWIAgsMyz36DCaycd5nbg/9kzm0liw3JocfRqyJY0KPmzFjbswozXyW0DnIYA=="],
+
+    "@typescript/typescript-linux-ppc64": ["@typescript/typescript-linux-ppc64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-linux-ppc64/-/typescript-linux-ppc64-7.0.2.tgz", { "os": "linux", "cpu": "ppc64" }, "sha512-DORx5b3sd/4S7eayxm4FQv+A7CrkUIGRaHiwI8oiHTAI1fAPWhF4J0vAlkC8biAlHSVVwxMQ3tjZ2/DVbnQiiA=="],
+
+    "@typescript/typescript-linux-riscv64": ["@typescript/typescript-linux-riscv64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-linux-riscv64/-/typescript-linux-riscv64-7.0.2.tgz", { "os": "linux", "cpu": "none" }, "sha512-wf0jqEDOjrPRnKwYRyyJDRo11KMbvMFrU+q4zqKyChODBzvlkbhNQfKvLxQCcwTpdDaXSHZTVuh0JoCrKCUMHQ=="],
+
+    "@typescript/typescript-linux-s390x": ["@typescript/typescript-linux-s390x@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-linux-s390x/-/typescript-linux-s390x-7.0.2.tgz", { "os": "linux", "cpu": "s390x" }, "sha512-IkwJc3L7yhytWd/ewjyxNDfOmswCm9GWMJT/ue/dU4aZNbwZeYAetq42VyLmsmSjvoX7z74X6ZaYCtzAr0EuGw=="],
+
+    "@typescript/typescript-linux-x64": ["@typescript/typescript-linux-x64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-linux-x64/-/typescript-linux-x64-7.0.2.tgz", { "os": "linux", "cpu": "x64" }, "sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A=="],
+
+    "@typescript/typescript-netbsd-arm64": ["@typescript/typescript-netbsd-arm64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-netbsd-arm64/-/typescript-netbsd-arm64-7.0.2.tgz", { "os": "none", "cpu": "arm64" }, "sha512-+polYF4MF04aPpO5FTkHran9yUQDSXqy5GiSDKpsll5jy3l3+g9QLhpf39T+ePtefhXLOGrLl0QIjkQP6VnelA=="],
+
+    "@typescript/typescript-netbsd-x64": ["@typescript/typescript-netbsd-x64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-netbsd-x64/-/typescript-netbsd-x64-7.0.2.tgz", { "os": "none", "cpu": "x64" }, "sha512-8YIT0EHM/3dq10ZOVF/A7pc/YSMtbcecct4rWtexrnSCHOPcpC2KTLXfTCR6vDpnSiY12heNb1GiN/wu+T/FyA=="],
+
+    "@typescript/typescript-openbsd-arm64": ["@typescript/typescript-openbsd-arm64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-openbsd-arm64/-/typescript-openbsd-arm64-7.0.2.tgz", { "os": "openbsd", "cpu": "arm64" }, "sha512-APT8+ClYnuYm1u9+kgGXoMj2VzWzcymwh2gNSQVySHfkRDGOTVkoWLjCmOQSaO+PoqQ57B0flRp9SA+7GnnkzQ=="],
+
+    "@typescript/typescript-openbsd-x64": ["@typescript/typescript-openbsd-x64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-openbsd-x64/-/typescript-openbsd-x64-7.0.2.tgz", { "os": "openbsd", "cpu": "x64" }, "sha512-yX7s+Q0Dln0Dt9tEzZsAjXXR/+ytBM7AlglaqyeMPxQszJ1JhlJdZ6jLA+IzldHtflX81em7lDao1xXu+aRRkg=="],
+
+    "@typescript/typescript-sunos-x64": ["@typescript/typescript-sunos-x64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-sunos-x64/-/typescript-sunos-x64-7.0.2.tgz", { "os": "sunos", "cpu": "x64" }, "sha512-dLJDGaLZ1D4HPQn62u1n8mBDkJREwMsAkCdkwd4Ieqw+x3TUyTsqY0YiBCtE6H6OzzgGk3iuZ3vFWRS+E8/d1g=="],
+
+    "@typescript/typescript-win32-arm64": ["@typescript/typescript-win32-arm64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-win32-arm64/-/typescript-win32-arm64-7.0.2.tgz", { "os": "win32", "cpu": "arm64" }, "sha512-Gyl1Vy6OsWesLzmq+EP0Fb7b4Nid5232AvcA2SFcdYreldpNtYFFofPjnt62y9hQy7VTaZp65ICJjuAQRaVcIQ=="],
+
+    "@typescript/typescript-win32-x64": ["@typescript/typescript-win32-x64@7.0.2", "https://registry.npmmirror.com/@typescript/typescript-win32-x64/-/typescript-win32-x64-7.0.2.tgz", { "os": "win32", "cpu": "x64" }, "sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g=="],
+
+    "@unhead/bundler": ["@unhead/bundler@3.2.1", "https://registry.npmmirror.com/@unhead/bundler/-/bundler-3.2.1.tgz", { "dependencies": { "@vitejs/devtools-kit": "^0.3.4", "magic-string": "^1.0.0", "oxc-parser": "^0.140.0", "oxc-walker": "^1.0.0", "ufo": "^1.6.4", "unplugin": "^3.3.0" }, "peerDependencies": { "@unhead/cli": "^3.2.1", "esbuild": ">=0.17.0", "lightningcss": ">=1.20.0", "rolldown": ">=1.0.0-beta.0", "unhead": "^3.2.1", "vite": ">=6.4.2", "webpack": ">=5.0.0" }, "optionalPeers": ["@unhead/cli", "esbuild", "lightningcss", "rolldown", "vite", "webpack"] }, "sha512-lMJGiviHfmZT1dtL+VAi4AgP0NrT1dZXDVK96lajUF4tIYxha1FEo0yQun0lp1J+RL8BE2pm3u2LZY9564dA1A=="],
+
+    "@unhead/vue": ["@unhead/vue@3.2.1", "https://registry.npmmirror.com/@unhead/vue/-/vue-3.2.1.tgz", { "dependencies": { "@unhead/bundler": "3.2.1", "hookable": "^6.1.1", "unhead": "3.2.1", "unplugin": "^3.3.0" }, "peerDependencies": { "vite": ">=6.4.2", "vue": ">=3.5.18", "webpack": ">=5.0.0" }, "optionalPeers": ["vite", "webpack"] }, "sha512-HILBUv/3QDIze3SosuL0/fkXhBsw+XfDM8Et62O1R4sAAVcjxnggc8JSYn6LrgEKht1GABnz94usRtBe3SofgA=="],
 
     "@unovis/dagre-layout": ["@unovis/dagre-layout@0.8.8-2", "https://registry.npmmirror.com/@unovis/dagre-layout/-/dagre-layout-0.8.8-2.tgz", { "dependencies": { "@unovis/graphlibrary": "^2.2.0-2", "lodash-es": "^4.17.21" } }, "sha512-ZfDvfcYtzzhZhgKZty8XDi+zQIotfRqfNVF5M3dFQ9d9C5MTaRdbeBnPUkNrmlLJGgQ42HMOE2ajZLfm2VlRhg=="],
 
@@ -757,7 +801,7 @@
 
     "@vercel/nft": ["@vercel/nft@1.10.2", "https://registry.npmmirror.com/@vercel/nft/-/nft-1.10.2.tgz", { "dependencies": { "@mapbox/node-pre-gyp": "^2.0.0", "@rollup/pluginutils": "^5.1.3", "acorn": "^8.6.0", "acorn-import-attributes": "^1.9.5", "async-sema": "^3.1.1", "bindings": "^1.4.0", "estree-walker": "2.0.2", "glob": "^13.0.0", "graceful-fs": "^4.2.9", "node-gyp-build": "^4.2.2", "picomatch": "^4.0.2", "resolve-from": "^5.0.0" }, "bin": { "nft": "out/cli.js" } }, "sha512-w+WyX5Ulmj4dtTZrxaulqrjaLZHSbnPzx75SJsTNYmotKsqn1JlLnDJa+lz5hn90HJofhl/2MAtw0mCrgM3qYw=="],
 
-    "@vitejs/devtools-kit": ["@vitejs/devtools-kit@0.4.2", "https://registry.npmmirror.com/@vitejs/devtools-kit/-/devtools-kit-0.4.2.tgz", { "dependencies": { "@devframes/hub": "^0.7.5", "devframe": "^0.7.5", "local-pkg": "^1.2.1", "mlly": "^1.8.2", "nostics": "^1.2.0", "nypm": "^0.6.8" }, "peerDependencies": { "vite": "*" } }, "sha512-/8F2+O2yxzGd2fFKVUrKNpcoKjdfomHeFs0hzrAiRqZCB/qxKID3u8HnrFl0KquDOsiIKpf/VEU35Bu5ZBWZ/w=="],
+    "@vitejs/devtools-kit": ["@vitejs/devtools-kit@0.3.4", "https://registry.npmmirror.com/@vitejs/devtools-kit/-/devtools-kit-0.3.4.tgz", { "dependencies": { "@devframes/hub": "^0.5.4", "birpc": "^4.0.0", "devframe": "^0.5.4", "mlly": "^1.8.2", "nostics": "^1.1.4", "pathe": "^2.0.3", "perfect-debounce": "^2.1.0", "tinyexec": "^1.2.4" }, "peerDependencies": { "vite": "*" } }, "sha512-QHvb3wF0KZxvbfEplzzdGenB/dWoPBQlUnw3VVBm5qUYTdoud8rOoem9QI6h/+7a+iwy88LmLigxbSXbbv2Uyg=="],
 
     "@vitejs/plugin-vue": ["@vitejs/plugin-vue@6.0.8", "https://registry.npmmirror.com/@vitejs/plugin-vue/-/plugin-vue-6.0.8.tgz", { "dependencies": { "@rolldown/pluginutils": "^1.0.1" }, "peerDependencies": { "vite": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0", "vue": "^3.2.25" } }, "sha512-0ZjgOg7oO6farnNGup7yvoM/YXZV84OZxHAwtflItNa/6zzQyVb5LNxyea3FEKEX2XlagIKzrlH7wwxkKgtiew=="],
 
@@ -1063,7 +1107,7 @@
 
     "devalue": ["devalue@5.8.2", "https://registry.npmmirror.com/devalue/-/devalue-5.8.2.tgz", {}, "sha512-DObPPAfdtFbXjxLqK8s2Xk9ZuWz5+ZoFEhC7J76es4GU/rEiXwHTmbImoCdyoCOcBH1UF3+Cz6Z2sYD4hyl5TA=="],
 
-    "devframe": ["devframe@0.7.9", "https://registry.npmmirror.com/devframe/-/devframe-0.7.9.tgz", { "dependencies": { "@valibot/to-json-schema": "^1.7.1", "birpc": "^4.0.0", "crossws": "^0.4.10", "destr": "^2.0.5", "h3": "2.0.1-rc.22", "mrmime": "^2.0.1", "nostics": "^1.2.0", "pathe": "^2.0.3", "ufo": "^1.6.4", "valibot": "^1.4.2" }, "peerDependencies": { "@modelcontextprotocol/sdk": "^1.0.0", "cac": "^7.0.0" }, "optionalPeers": ["@modelcontextprotocol/sdk", "cac"] }, "sha512-ZWSHN5uk6KwCsrCXhu373kdBnk5kxkgxmGpD8tvv5DablgUOfWz+JrP4ufufTrns6PtQFP1Nh5S7sffWoLLp8w=="],
+    "devframe": ["devframe@0.5.4", "https://registry.npmmirror.com/devframe/-/devframe-0.5.4.tgz", { "dependencies": { "@valibot/to-json-schema": "^1.7.0", "birpc": "^4.0.0", "cac": "^7.0.0", "h3": "2.0.1-rc.22", "mrmime": "^2.0.1", "nostics": "^0.2.0", "pathe": "^2.0.3", "valibot": "^1.4.1", "ws": "^8.21.0" }, "peerDependencies": { "@modelcontextprotocol/sdk": "^1.0.0" }, "optionalPeers": ["@modelcontextprotocol/sdk"] }, "sha512-dbHU/LuptR1aMXcizjHUeY3gu7qVaRQoFYqbbyyGuO6Y+avFA4uQtwinHtG1qa7lRel/7b8JrBDm0nbnxU3vqg=="],
 
     "diff": ["diff@8.0.4", "https://registry.npmmirror.com/diff/-/diff-8.0.4.tgz", {}, "sha512-DPi0FmjiSU5EvQV0++GFDOJ9ASQUVFh5kD+OzOnYdi7n3Wpm9hWWGfB/O2blfHcMVTL5WkQXSnRiK9makhrcnw=="],
 
@@ -1483,7 +1527,7 @@
 
     "oxc-walker": ["oxc-walker@1.0.0", "https://registry.npmmirror.com/oxc-walker/-/oxc-walker-1.0.0.tgz", { "dependencies": { "magic-regexp": "^0.11.0" }, "peerDependencies": { "oxc-parser": ">=0.98.0", "rolldown": ">=1.0.0" }, "optionalPeers": ["oxc-parser", "rolldown"] }, "sha512-eMsHflAGfOskpWxtp9xP/f5b96XLEU8ifTd2gOOCkdux9HMxKGy5S1ru0Gh1B3aPu+YbfmWUUVkcb7MrZz3XyQ=="],
 
-    "oxfmt": ["oxfmt@0.59.0", "https://registry.npmmirror.com/oxfmt/-/oxfmt-0.59.0.tgz", { "dependencies": { "tinypool": "2.1.0" }, "optionalDependencies": { "@oxfmt/binding-android-arm-eabi": "0.59.0", "@oxfmt/binding-android-arm64": "0.59.0", "@oxfmt/binding-darwin-arm64": "0.59.0", "@oxfmt/binding-darwin-x64": "0.59.0", "@oxfmt/binding-freebsd-x64": "0.59.0", "@oxfmt/binding-linux-arm-gnueabihf": "0.59.0", "@oxfmt/binding-linux-arm-musleabihf": "0.59.0", "@oxfmt/binding-linux-arm64-gnu": "0.59.0", "@oxfmt/binding-linux-arm64-musl": "0.59.0", "@oxfmt/binding-linux-ppc64-gnu": "0.59.0", "@oxfmt/binding-linux-riscv64-gnu": "0.59.0", "@oxfmt/binding-linux-riscv64-musl": "0.59.0", "@oxfmt/binding-linux-s390x-gnu": "0.59.0", "@oxfmt/binding-linux-x64-gnu": "0.59.0", "@oxfmt/binding-linux-x64-musl": "0.59.0", "@oxfmt/binding-openharmony-arm64": "0.59.0", "@oxfmt/binding-win32-arm64-msvc": "0.59.0", "@oxfmt/binding-win32-ia32-msvc": "0.59.0", "@oxfmt/binding-win32-x64-msvc": "0.59.0" }, "peerDependencies": { "svelte": "^5.0.0", "vite-plus": "*" }, "optionalPeers": ["svelte", "vite-plus"], "bin": { "oxfmt": "bin/oxfmt" } }, "sha512-Xqk6cPZS1yMvVa7OAuenaDZUsgMDutvvbZ9/L5gSvAfW64+WN4HVhgipLj5rVERbYQt8fLs9TopyZ1rU1XEG/w=="],
+    "oxfmt": ["oxfmt@0.60.0", "https://registry.npmmirror.com/oxfmt/-/oxfmt-0.60.0.tgz", { "dependencies": { "tinypool": "2.1.0" }, "optionalDependencies": { "@oxfmt/binding-android-arm-eabi": "0.60.0", "@oxfmt/binding-android-arm64": "0.60.0", "@oxfmt/binding-darwin-arm64": "0.60.0", "@oxfmt/binding-darwin-x64": "0.60.0", "@oxfmt/binding-freebsd-x64": "0.60.0", "@oxfmt/binding-linux-arm-gnueabihf": "0.60.0", "@oxfmt/binding-linux-arm-musleabihf": "0.60.0", "@oxfmt/binding-linux-arm64-gnu": "0.60.0", "@oxfmt/binding-linux-arm64-musl": "0.60.0", "@oxfmt/binding-linux-ppc64-gnu": "0.60.0", "@oxfmt/binding-linux-riscv64-gnu": "0.60.0", "@oxfmt/binding-linux-riscv64-musl": "0.60.0", "@oxfmt/binding-linux-s390x-gnu": "0.60.0", "@oxfmt/binding-linux-x64-gnu": "0.60.0", "@oxfmt/binding-linux-x64-musl": "0.60.0", "@oxfmt/binding-openharmony-arm64": "0.60.0", "@oxfmt/binding-win32-arm64-msvc": "0.60.0", "@oxfmt/binding-win32-ia32-msvc": "0.60.0", "@oxfmt/binding-win32-x64-msvc": "0.60.0" }, "peerDependencies": { "svelte": "^5.0.0", "vite-plus": "*" }, "optionalPeers": ["svelte", "vite-plus"], "bin": { "oxfmt": "bin/oxfmt" } }, "sha512-fViX6i+gJuZWY+jI/fnR6WRbRj70GZ9RlCd30MygJrHTUNc4DxvKHWw8vBjMjffv3PgU5qWDR0AzmojQByqaZA=="],
 
     "oxlint": ["oxlint@1.75.0", "https://registry.npmmirror.com/oxlint/-/oxlint-1.75.0.tgz", { "optionalDependencies": { "@oxlint/binding-android-arm-eabi": "1.75.0", "@oxlint/binding-android-arm64": "1.75.0", "@oxlint/binding-darwin-arm64": "1.75.0", "@oxlint/binding-darwin-x64": "1.75.0", "@oxlint/binding-freebsd-x64": "1.75.0", "@oxlint/binding-linux-arm-gnueabihf": "1.75.0", "@oxlint/binding-linux-arm-musleabihf": "1.75.0", "@oxlint/binding-linux-arm64-gnu": "1.75.0", "@oxlint/binding-linux-arm64-musl": "1.75.0", "@oxlint/binding-linux-ppc64-gnu": "1.75.0", "@oxlint/binding-linux-riscv64-gnu": "1.75.0", "@oxlint/binding-linux-riscv64-musl": "1.75.0", "@oxlint/binding-linux-s390x-gnu": "1.75.0", "@oxlint/binding-linux-x64-gnu": "1.75.0", "@oxlint/binding-linux-x64-musl": "1.75.0", "@oxlint/binding-openharmony-arm64": "1.75.0", "@oxlint/binding-win32-arm64-msvc": "1.75.0", "@oxlint/binding-win32-ia32-msvc": "1.75.0", "@oxlint/binding-win32-x64-msvc": "1.75.0" }, "peerDependencies": { "oxlint-tsgolint": ">=7.0.2001", "vite-plus": "*" }, "optionalPeers": ["oxlint-tsgolint", "vite-plus"], "bin": { "oxlint": "bin/oxlint" } }, "sha512-m9WzjRcRYA/uqIZDa9tclrieoPJ/ln1QYTKdFx6NUOs8uY5DiHlIwRQoCrHT6OM6O3ww3l2skY5gO7G7ZphE7g=="],
 
@@ -1519,7 +1563,7 @@
 
     "pkg-types": ["pkg-types@2.3.1", "https://registry.npmmirror.com/pkg-types/-/pkg-types-2.3.1.tgz", { "dependencies": { "confbox": "^0.2.4", "exsolve": "^1.0.8", "pathe": "^2.0.3" } }, "sha512-y+ichcgc2LrADuhLNAx8DFjVfgz91pRxfZdI3UDhxHvcVEZsenLO+7XaU5vOp0u/7V/wZ+plyuQxtrDlZJ+yeg=="],
 
-    "postcss": ["postcss@8.5.21", "https://registry.npmmirror.com/postcss/-/postcss-8.5.21.tgz", { "dependencies": { "nanoid": "^3.3.16", "picocolors": "^1.1.1", "source-map-js": "^1.2.1" } }, "sha512-v4sDNP3fdNiWMfabO7OwOQdOX8TiQSztKyT1Wj0w+j7LDallJThJRBBBmzVGyYj0crMh7jlV4zepPkiNu9UwDQ=="],
+    "postcss": ["postcss@8.5.22", "https://registry.npmmirror.com/postcss/-/postcss-8.5.22.tgz", { "dependencies": { "nanoid": "^3.3.16", "picocolors": "^1.1.1", "source-map-js": "^1.2.1" } }, "sha512-KBDEIpLrvpv16pp3K0Fw+UCoZfopFjjgeB+0tA/aaThfEE74kKDLrgg603YvOWJyg3+WYtyq3xYsQWsIyZlPqQ=="],
 
     "postcss-calc": ["postcss-calc@10.1.1", "https://registry.npmmirror.com/postcss-calc/-/postcss-calc-10.1.1.tgz", { "dependencies": { "postcss-selector-parser": "^7.0.0", "postcss-value-parser": "^4.2.0" }, "peerDependencies": { "postcss": "^8.4.38" } }, "sha512-NYEsLHh8DgG/PRH2+G9BTuUdtf9ViS+vdoQ0YA5OQdGsfN4ztiwtDWNtBl9EKeqNMFnIu8IKZ0cLxEQ5r5KVMw=="],
 
@@ -1815,7 +1859,7 @@
 
     "type-level-regexp": ["type-level-regexp@0.1.17", "https://registry.npmmirror.com/type-level-regexp/-/type-level-regexp-0.1.17.tgz", {}, "sha512-wTk4DH3cxwk196uGLK/E9pE45aLfeKJacKmcEgEOA/q5dnPGNxXt0cfYdFxb57L+sEpf1oJH4Dnx/pnRcku9jg=="],
 
-    "typescript": ["typescript@6.0.3", "https://registry.npmmirror.com/typescript/-/typescript-6.0.3.tgz", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="],
+    "typescript": ["typescript@7.0.2", "https://registry.npmmirror.com/typescript/-/typescript-7.0.2.tgz", { "optionalDependencies": { "@typescript/typescript-aix-ppc64": "7.0.2", "@typescript/typescript-darwin-arm64": "7.0.2", "@typescript/typescript-darwin-x64": "7.0.2", "@typescript/typescript-freebsd-arm64": "7.0.2", "@typescript/typescript-freebsd-x64": "7.0.2", "@typescript/typescript-linux-arm": "7.0.2", "@typescript/typescript-linux-arm64": "7.0.2", "@typescript/typescript-linux-loong64": "7.0.2", "@typescript/typescript-linux-mips64el": "7.0.2", "@typescript/typescript-linux-ppc64": "7.0.2", "@typescript/typescript-linux-riscv64": "7.0.2", "@typescript/typescript-linux-s390x": "7.0.2", "@typescript/typescript-linux-x64": "7.0.2", "@typescript/typescript-netbsd-arm64": "7.0.2", "@typescript/typescript-netbsd-x64": "7.0.2", "@typescript/typescript-openbsd-arm64": "7.0.2", "@typescript/typescript-openbsd-x64": "7.0.2", "@typescript/typescript-sunos-x64": "7.0.2", "@typescript/typescript-win32-arm64": "7.0.2", "@typescript/typescript-win32-x64": "7.0.2" }, "bin": { "tsc": "bin/tsc" } }, "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA=="],
 
     "ufo": ["ufo@1.6.4", "https://registry.npmmirror.com/ufo/-/ufo-1.6.4.tgz", {}, "sha512-JFNbkD1Svwe0KvGi8GOeLcP4kAWQ609twvCdcHxq1oSL8svv39ZuSvajcD8B+5D0eL4+s1Is2D/O6KN3qcTeRA=="],
 
@@ -1829,7 +1873,7 @@
 
     "unenv": ["unenv@2.0.0-rc.24", "https://registry.npmmirror.com/unenv/-/unenv-2.0.0-rc.24.tgz", { "dependencies": { "pathe": "^2.0.3" } }, "sha512-i7qRCmY42zmCwnYlh9H2SvLEypEFGye5iRmEMKjcGi7zk9UquigRjFtTLz0TYqr0ZGLZhaMHl/foy1bZR+Cwlw=="],
 
-    "unhead": ["unhead@3.2.2", "https://registry.npmmirror.com/unhead/-/unhead-3.2.2.tgz", { "dependencies": { "hookable": "^6.1.1", "unplugin": "^3.3.0" }, "peerDependencies": { "vite": ">=6.4.2" }, "optionalPeers": ["vite"] }, "sha512-1sp6E2pzYneEdLlhzboRSZJlJgqugvzfNP5hNYntx9YZmSRNT6KewddzMWUPfmo3qUgWlKxuKvI2mrjcnQ9SjA=="],
+    "unhead": ["unhead@3.2.1", "https://registry.npmmirror.com/unhead/-/unhead-3.2.1.tgz", { "dependencies": { "hookable": "^6.1.1", "unplugin": "^3.3.0" }, "peerDependencies": { "vite": ">=6.4.2" }, "optionalPeers": ["vite"] }, "sha512-Z7VNRf0QJlRZmwA1p5gsnmKYkjnbvV/CXdJAL+VMDmMF+RS2P4FqLouEhBA6WOuKPe3ZZ8EZgX2zQm7ZkAGDPg=="],
 
     "unicorn-magic": ["unicorn-magic@0.4.0", "https://registry.npmmirror.com/unicorn-magic/-/unicorn-magic-0.4.0.tgz", {}, "sha512-wH590V9VNgYH9g3lH9wWjTrUoKsjLF6sGLjhR4sH1LWpLmCOH0Zf7PukhDA8BiS7KHe4oPNkcTHqYkj7SOGUOw=="],
 
@@ -1935,8 +1979,6 @@
 
     "youch-core": ["youch-core@0.3.3", "https://registry.npmmirror.com/youch-core/-/youch-core-0.3.3.tgz", { "dependencies": { "@poppinss/exception": "^1.2.2", "error-stack-parser-es": "^1.0.5" } }, "sha512-ho7XuGjLaJ2hWHoK8yFnsUGy2Y5uDpqSTq1FkHLK4/oqKtyUU1AFbOOxY4IpC9f0fTLjwYbslUz0Po5BpD1wrA=="],
 
-    "zigpty": ["zigpty@0.2.1", "https://registry.npmmirror.com/zigpty/-/zigpty-0.2.1.tgz", {}, "sha512-MR9JqJx2wf5f4wz8zpx050AlqrmWeIW+1h0SO5iEyhG3HFRjY5luC3szS2ux2EGuPjE5OU9ZAuiCBeMWBTrqZw=="],
-
     "zip-stream": ["zip-stream@6.0.1", "https://registry.npmmirror.com/zip-stream/-/zip-stream-6.0.1.tgz", { "dependencies": { "archiver-utils": "^5.0.0", "compress-commons": "^6.0.2", "readable-stream": "^4.0.0" } }, "sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA=="],
 
     "zod": ["zod@4.4.3", "https://registry.npmmirror.com/zod/-/zod-4.4.3.tgz", {}, "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ=="],
@@ -1985,6 +2027,8 @@
 
     "@babel/traverse/@babel/types": ["@babel/types@7.29.7", "https://registry.npmmirror.com/@babel/types/-/types-7.29.7.tgz", { "dependencies": { "@babel/helper-string-parser": "^7.29.7", "@babel/helper-validator-identifier": "^7.29.7" } }, "sha512-4zBIxpPzowiZpusoFkyGVwakdRJUyuH5PxQ/PrqghfdFWWasvnCdPfQXHrenDai+gyLARulZjZowCOj6fjT4pA=="],
 
+    "@devframes/hub/nostics": ["nostics@0.2.0", "https://registry.npmmirror.com/nostics/-/nostics-0.2.0.tgz", { "dependencies": { "magic-string": "^0.30.21", "oxc-parser": "^0.132.0", "unplugin": "^3.0.0" } }, "sha512-/WQpI46UMbqvy1okYb+V+9wW3J8/m6GJ33wm691n/tyi6YtJiZ6ssJjENAU7y4evfYrrgYN9HllKDzPvffil1w=="],
+
     "@emotion/babel-plugin/escape-string-regexp": ["escape-string-regexp@4.0.0", "https://registry.npmmirror.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz", {}, "sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA=="],
 
     "@emotion/babel-plugin/source-map": ["source-map@0.5.7", "https://registry.npmmirror.com/source-map/-/source-map-0.5.7.tgz", {}, "sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ=="],
@@ -1994,8 +2038,6 @@
     "@isaacs/cliui/wrap-ansi": ["wrap-ansi@8.1.0", "https://registry.npmmirror.com/wrap-ansi/-/wrap-ansi-8.1.0.tgz", { "dependencies": { "ansi-styles": "^6.1.0", "string-width": "^5.0.1", "strip-ansi": "^7.0.1" } }, "sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ=="],
 
     "@mapbox/geojson-rewind/get-stream": ["get-stream@6.0.1", "https://registry.npmmirror.com/get-stream/-/get-stream-6.0.1.tgz", {}, "sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg=="],
-
-    "@nuxt/nitro-server/@unhead/vue": ["@unhead/vue@3.2.2", "https://registry.npmmirror.com/@unhead/vue/-/vue-3.2.2.tgz", { "dependencies": { "@unhead/bundler": "3.2.2", "hookable": "^6.1.1", "unhead": "3.2.2", "unplugin": "^3.3.0" }, "peerDependencies": { "vite": ">=6.4.2", "vue": ">=3.5.18", "webpack": ">=5.0.0" }, "optionalPeers": ["vite", "webpack"] }, "sha512-5ZGdNA/z8YEH6wBNoX74X6EqzE1oj1pZPIz+3ccWIyllMkAQbMOtja6VGxRLRUc3Fqg6Ik6YmEBBb+OW6RYXTg=="],
 
     "@nuxt/telemetry/ofetch": ["ofetch@2.0.0-alpha.3", "https://registry.npmmirror.com/ofetch/-/ofetch-2.0.0-alpha.3.tgz", {}, "sha512-zpYTCs2byOuft65vI3z43Dd6iSdFbOZZLb9/d21aCpx2rGastVU9dOCv0lu4ykc1Ur1anAYjDi3SUvR0vq50JA=="],
 
@@ -2022,8 +2064,6 @@
     "@types/d3-sankey/@types/d3-shape": ["@types/d3-shape@1.3.12", "https://registry.npmmirror.com/@types/d3-shape/-/d3-shape-1.3.12.tgz", { "dependencies": { "@types/d3-path": "^1" } }, "sha512-8oMzcd4+poSLGgV0R1Q1rOlx/xdmozS4Xab7np0eamFFUYq71AU9pOCJEFnkXW2aI/oXdVYJzw6pssbSut7Z9Q=="],
 
     "@unhead/bundler/magic-string": ["magic-string@1.0.0", "https://registry.npmmirror.com/magic-string/-/magic-string-1.0.0.tgz", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-CGvjzMN08iv6w1mm4/x3Gh1hLb4VnyRUA15FFpl6CsCIGGoe36k7kY5KNz9QDbSBN5I/fWHM6ZlIkUTa5xdUEA=="],
-
-    "@unhead/vue/unhead": ["unhead@2.1.16", "https://registry.npmmirror.com/unhead/-/unhead-2.1.16.tgz", { "dependencies": { "hookable": "^6.0.1" } }, "sha512-cD2Q4a6SQHhW9/bPp17NT4GJ1yS0DSLe75WEHKQ8bKa/wjB6cIki3KeL86hhllNBcpv8i6bxdwtwQunneXPqKQ=="],
 
     "@vercel/nft/estree-walker": ["estree-walker@2.0.2", "https://registry.npmmirror.com/estree-walker/-/estree-walker-2.0.2.tgz", {}, "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w=="],
 
@@ -2067,9 +2107,9 @@
 
     "d3-sankey/d3-shape": ["d3-shape@1.3.7", "https://registry.npmmirror.com/d3-shape/-/d3-shape-1.3.7.tgz", { "dependencies": { "d3-path": "1" } }, "sha512-EUkvKjqPFUAZyOlhY5gzCxCeI0Aep04LwIRpsZ/mLFelJiUfnK56jo5JMDSE7yyP2kLSb6LtF+S5chMk7uqPqw=="],
 
-    "devframe/crossws": ["crossws@0.4.10", "https://registry.npmmirror.com/crossws/-/crossws-0.4.10.tgz", { "peerDependencies": { "srvx": ">=0.11.5" }, "optionalPeers": ["srvx"] }, "sha512-pz3oubH/dt12KjqsUB0IuXW4nwRDQ583iDsP4555Cpdqx0NoU7pGlWBcayyFI8f/l/idRpgjMEfwuOxSWJYlIA=="],
-
     "devframe/h3": ["h3@2.0.1-rc.22", "https://registry.npmmirror.com/h3/-/h3-2.0.1-rc.22.tgz", { "dependencies": { "rou3": "^0.8.1", "srvx": "^0.11.15" }, "peerDependencies": { "crossws": "^0.4.1" }, "optionalPeers": ["crossws"], "bin": { "h3": "bin/h3.mjs" } }, "sha512-Esv0DMIuPkCTSWCA0vO73vcTqwzH1wjSrAO1TXNu/K3up1sZHa9EKMapbmxCDYBeymC3fVTk4qxp7ogQWQ+KgA=="],
+
+    "devframe/nostics": ["nostics@0.2.0", "https://registry.npmmirror.com/nostics/-/nostics-0.2.0.tgz", { "dependencies": { "magic-string": "^0.30.21", "oxc-parser": "^0.132.0", "unplugin": "^3.0.0" } }, "sha512-/WQpI46UMbqvy1okYb+V+9wW3J8/m6GJ33wm691n/tyi6YtJiZ6ssJjENAU7y4evfYrrgYN9HllKDzPvffil1w=="],
 
     "dom-serializer/entities": ["entities@4.5.0", "https://registry.npmmirror.com/entities/-/entities-4.5.0.tgz", {}, "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="],
 
@@ -2106,8 +2146,6 @@
     "nitropack/unctx": ["unctx@2.5.0", "https://registry.npmmirror.com/unctx/-/unctx-2.5.0.tgz", { "dependencies": { "acorn": "^8.15.0", "estree-walker": "^3.0.3", "magic-string": "^0.30.21", "unplugin": "^2.3.11" } }, "sha512-p+Rz9x0R7X+CYDkT+Xg8/GhpcShTlU8n+cf9OtOEf7zEQsNcCZO1dPKNRDqvUTaq+P32PMMkxWHwfrxkqfqAYg=="],
 
     "npm-run-path/path-key": ["path-key@4.0.0", "https://registry.npmmirror.com/path-key/-/path-key-4.0.0.tgz", {}, "sha512-haREypq7xkM7ErfgIyA0z+Bj4AGKlMSdlQE2jvJo6huWD1EdkKYV+G/T4nq0YEF2vgTT8kqMFKo1uHn950r4SQ=="],
-
-    "nuxt/@unhead/vue": ["@unhead/vue@3.2.2", "https://registry.npmmirror.com/@unhead/vue/-/vue-3.2.2.tgz", { "dependencies": { "@unhead/bundler": "3.2.2", "hookable": "^6.1.1", "unhead": "3.2.2", "unplugin": "^3.3.0" }, "peerDependencies": { "vite": ">=6.4.2", "vue": ">=3.5.18", "webpack": ">=5.0.0" }, "optionalPeers": ["vite", "webpack"] }, "sha512-5ZGdNA/z8YEH6wBNoX74X6EqzE1oj1pZPIz+3ccWIyllMkAQbMOtja6VGxRLRUc3Fqg6Ik6YmEBBb+OW6RYXTg=="],
 
     "nuxt/magic-string": ["magic-string@1.0.0", "https://registry.npmmirror.com/magic-string/-/magic-string-1.0.0.tgz", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-CGvjzMN08iv6w1mm4/x3Gh1hLb4VnyRUA15FFpl6CsCIGGoe36k7kY5KNz9QDbSBN5I/fWHM6ZlIkUTa5xdUEA=="],
 
@@ -2191,6 +2229,8 @@
 
     "@babel/traverse/@babel/types/@babel/helper-validator-identifier": ["@babel/helper-validator-identifier@7.29.7", "https://registry.npmmirror.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz", {}, "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg=="],
 
+    "@devframes/hub/nostics/oxc-parser": ["oxc-parser@0.132.0", "https://registry.npmmirror.com/oxc-parser/-/oxc-parser-0.132.0.tgz", { "dependencies": { "@oxc-project/types": "^0.132.0" }, "optionalDependencies": { "@oxc-parser/binding-android-arm-eabi": "0.132.0", "@oxc-parser/binding-android-arm64": "0.132.0", "@oxc-parser/binding-darwin-arm64": "0.132.0", "@oxc-parser/binding-darwin-x64": "0.132.0", "@oxc-parser/binding-freebsd-x64": "0.132.0", "@oxc-parser/binding-linux-arm-gnueabihf": "0.132.0", "@oxc-parser/binding-linux-arm-musleabihf": "0.132.0", "@oxc-parser/binding-linux-arm64-gnu": "0.132.0", "@oxc-parser/binding-linux-arm64-musl": "0.132.0", "@oxc-parser/binding-linux-ppc64-gnu": "0.132.0", "@oxc-parser/binding-linux-riscv64-gnu": "0.132.0", "@oxc-parser/binding-linux-riscv64-musl": "0.132.0", "@oxc-parser/binding-linux-s390x-gnu": "0.132.0", "@oxc-parser/binding-linux-x64-gnu": "0.132.0", "@oxc-parser/binding-linux-x64-musl": "0.132.0", "@oxc-parser/binding-openharmony-arm64": "0.132.0", "@oxc-parser/binding-wasm32-wasi": "0.132.0", "@oxc-parser/binding-win32-arm64-msvc": "0.132.0", "@oxc-parser/binding-win32-ia32-msvc": "0.132.0", "@oxc-parser/binding-win32-x64-msvc": "0.132.0" } }, "sha512-+0LAPHaqtfQlvWdpaAa09SmOaZZgP8C552xosEkGJ4+ruEwP1Vgx+sqBgcBCNfR6KDCmagGOZTde8wmAvcI/Hg=="],
+
     "@isaacs/cliui/string-width/emoji-regex": ["emoji-regex@9.2.2", "https://registry.npmmirror.com/emoji-regex/-/emoji-regex-9.2.2.tgz", {}, "sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg=="],
 
     "@types/d3-sankey/@types/d3-shape/@types/d3-path": ["@types/d3-path@1.0.11", "https://registry.npmmirror.com/@types/d3-path/-/d3-path-1.0.11.tgz", {}, "sha512-4pQMp8ldf7UaB/gR8Fvvy69psNHkTpD/pVw3vmEi8iZAB9EPMBruB1JvHO4BIq9QkUUd2lV1F5YXpMNj7JPBpw=="],
@@ -2223,7 +2263,11 @@
 
     "d3-sankey/d3-shape/d3-path": ["d3-path@1.0.9", "https://registry.npmmirror.com/d3-path/-/d3-path-1.0.9.tgz", {}, "sha512-VLaYcn81dtHVTjEHd8B+pbe9yHWpXKZUC87PzoFmsFrJqgFwDe/qxfp5MlfsfM1V5E/iVt0MmEbWQ7FVIXh/bg=="],
 
+    "devframe/h3/crossws": ["crossws@0.4.10", "https://registry.npmmirror.com/crossws/-/crossws-0.4.10.tgz", { "peerDependencies": { "srvx": ">=0.11.5" }, "optionalPeers": ["srvx"] }, "sha512-pz3oubH/dt12KjqsUB0IuXW4nwRDQ583iDsP4555Cpdqx0NoU7pGlWBcayyFI8f/l/idRpgjMEfwuOxSWJYlIA=="],
+
     "devframe/h3/rou3": ["rou3@0.8.1", "https://registry.npmmirror.com/rou3/-/rou3-0.8.1.tgz", {}, "sha512-ePa+XGk00/3HuCqrEnK3LxJW7I0SdNg6EFzKUJG73hMAdDcOUC/i/aSz7LSDwLrGr33kal/rqOGydzwl6U7zBA=="],
+
+    "devframe/nostics/oxc-parser": ["oxc-parser@0.132.0", "https://registry.npmmirror.com/oxc-parser/-/oxc-parser-0.132.0.tgz", { "dependencies": { "@oxc-project/types": "^0.132.0" }, "optionalDependencies": { "@oxc-parser/binding-android-arm-eabi": "0.132.0", "@oxc-parser/binding-android-arm64": "0.132.0", "@oxc-parser/binding-darwin-arm64": "0.132.0", "@oxc-parser/binding-darwin-x64": "0.132.0", "@oxc-parser/binding-freebsd-x64": "0.132.0", "@oxc-parser/binding-linux-arm-gnueabihf": "0.132.0", "@oxc-parser/binding-linux-arm-musleabihf": "0.132.0", "@oxc-parser/binding-linux-arm64-gnu": "0.132.0", "@oxc-parser/binding-linux-arm64-musl": "0.132.0", "@oxc-parser/binding-linux-ppc64-gnu": "0.132.0", "@oxc-parser/binding-linux-riscv64-gnu": "0.132.0", "@oxc-parser/binding-linux-riscv64-musl": "0.132.0", "@oxc-parser/binding-linux-s390x-gnu": "0.132.0", "@oxc-parser/binding-linux-x64-gnu": "0.132.0", "@oxc-parser/binding-linux-x64-musl": "0.132.0", "@oxc-parser/binding-openharmony-arm64": "0.132.0", "@oxc-parser/binding-wasm32-wasi": "0.132.0", "@oxc-parser/binding-win32-arm64-msvc": "0.132.0", "@oxc-parser/binding-win32-ia32-msvc": "0.132.0", "@oxc-parser/binding-win32-x64-msvc": "0.132.0" } }, "sha512-+0LAPHaqtfQlvWdpaAa09SmOaZZgP8C552xosEkGJ4+ruEwP1Vgx+sqBgcBCNfR6KDCmagGOZTde8wmAvcI/Hg=="],
 
     "global-prefix/which/isexe": ["isexe@2.0.0", "https://registry.npmmirror.com/isexe/-/isexe-2.0.0.tgz", {}, "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="],
 
@@ -2341,6 +2385,48 @@
 
     "wrap-ansi-cjs/strip-ansi/ansi-regex": ["ansi-regex@5.0.1", "https://registry.npmmirror.com/ansi-regex/-/ansi-regex-5.0.1.tgz", {}, "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="],
 
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-android-arm-eabi": ["@oxc-parser/binding-android-arm-eabi@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-android-arm-eabi/-/binding-android-arm-eabi-0.132.0.tgz", { "os": "android", "cpu": "arm" }, "sha512-KrLaPWa5c9Y7LkW+rKkaUE3y7DBDrQtaf7rlsSDfv6KAHUjgzAIRA761Lrrp6//Yd/Rlie/yEOt9YENCoJnOcw=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-android-arm64": ["@oxc-parser/binding-android-arm64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-android-arm64/-/binding-android-arm64-0.132.0.tgz", { "os": "android", "cpu": "arm64" }, "sha512-SThDrSeamB/kG2+NxcJ5/wSLcV6dUqDknrPLqFYQ0ST/55mtBP4M7Q/f3QbubH6aAd11wpzZn/nwbVRSdobOpg=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-darwin-arm64": ["@oxc-parser/binding-darwin-arm64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.132.0.tgz", { "os": "darwin", "cpu": "arm64" }, "sha512-Lc0f/TYoKBghE5/2Gsv7bLXk+TJZunx2Tf61X8hG4ARXdc8UYI26dCGccFSd1AyFbK3jfaNXtMnupggDbjPXdQ=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-darwin-x64": ["@oxc-parser/binding-darwin-x64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-darwin-x64/-/binding-darwin-x64-0.132.0.tgz", { "os": "darwin", "cpu": "x64" }, "sha512-RG2eJIpf7C21z9HSSXFw1bTArdpKe7Y4fwcJTwRq1yCSe1vSavaN9GA1sm9KqzemTLAGVktQ+7qBTGp0vQeUZg=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-freebsd-x64": ["@oxc-parser/binding-freebsd-x64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.132.0.tgz", { "os": "freebsd", "cpu": "x64" }, "sha512-wQIPntPLtJ8NcBpvKPbEv3NqzV6k8eP8tP/jE9Rg8HTg/j7urZGFSsTCPCW5k77Qfw2DM4vRvc9p3I4yq/Shvw=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-arm-gnueabihf": ["@oxc-parser/binding-linux-arm-gnueabihf@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.132.0.tgz", { "os": "linux", "cpu": "arm" }, "sha512-PixKEpeSe3yxQWqNyOCBALRYc72+Tj7ILDofUl3iXo25cVOzLA6jHUhmOINRtWIPh7dbUie3QNeabwaQpZTw6w=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-arm-musleabihf": ["@oxc-parser/binding-linux-arm-musleabihf@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.132.0.tgz", { "os": "linux", "cpu": "arm" }, "sha512-sCR+DzGHlyHKnbA2z9zWjTUhIo8Sy0enJl4RDsBwPmkxYynPatpwOAWe8W5127SlW0boqUWHGtr1NWn5UwIhXQ=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-arm64-gnu": ["@oxc-parser/binding-linux-arm64-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.132.0.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-sQBix5P2cW+IpzTcCwYxnh9yALrKSIkKJThspBvMGcygSMnbzkSvhN7SfuX1hvBk8y1XEChsdkU3ET0V5DmzUw=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-arm64-musl": ["@oxc-parser/binding-linux-arm64-musl@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.132.0.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-WozHg3Kc//8Sk756HXXgMbEAvqtG+Lzb9JOojwQzIGDtN78Az2dLttkb71akWYUF/8IgYfDSlfKh4Uot8is5Vw=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-ppc64-gnu": ["@oxc-parser/binding-linux-ppc64-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.132.0.tgz", { "os": "linux", "cpu": "ppc64" }, "sha512-CmX/ulNBOEwWTyVRmcpYKAcAizW6+OjtLJgo7fXoL9OqQvjF4VER8tPomv44vwzfSCy1BHbsB0ZlZYzYJNj4cA=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-riscv64-gnu": ["@oxc-parser/binding-linux-riscv64-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.132.0.tgz", { "os": "linux", "cpu": "none" }, "sha512-j9oQS+hM90SdhviNGWbPgT4+Rlq+ac++q/zjgwPD1mVHgxHzATvoRGtDx0sXGmFOQ9J9YkwAhYGb5MAHL6TAsA=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-riscv64-musl": ["@oxc-parser/binding-linux-riscv64-musl@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.132.0.tgz", { "os": "linux", "cpu": "none" }, "sha512-bLz+Xi+Agnfmd7kWPEsSVwCn2k4EyIalZkNBcQ0OGIv9rqn8VgCPLNd03tM9mKX/5TdlvDXalz0q71BIrOPNqg=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-s390x-gnu": ["@oxc-parser/binding-linux-s390x-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.132.0.tgz", { "os": "linux", "cpu": "s390x" }, "sha512-U6t2qbJU0ypTfyj9QV3W1Y6mITDTL8ai/OR6NUn85vyHthOvobKWgXzU4tu0EskSzlpuVFz1g0jFGulDIUKHxQ=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-x64-gnu": ["@oxc-parser/binding-linux-x64-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.132.0.tgz", { "os": "linux", "cpu": "x64" }, "sha512-WcEaSNHFk8yz5YFlQQAlhq6jOFmZBB/RKE7uzhyCIf+pF1Lmv9gUH4221mle2Gd9iHyWT3ySNph8yZgb1xYdWg=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-linux-x64-musl": ["@oxc-parser/binding-linux-x64-musl@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.132.0.tgz", { "os": "linux", "cpu": "x64" }, "sha512-iQrV4iJzQgRwK3BWRmQl1C3C6g3wYpXN2WLdQdyR+efoUnncdShZAVp9OgcojtlD3MDRbuOMGG3SjxF4fL4nlQ=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-openharmony-arm64": ["@oxc-parser/binding-openharmony-arm64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-openharmony-arm64/-/binding-openharmony-arm64-0.132.0.tgz", { "os": "none", "cpu": "arm64" }, "sha512-FWzmUGrZ6GUby4U7WIwcCtab6tdmlTO3xTRRKyb5kjIJVEiaUAT8animUG/nK8ZCA8gkRkPOTId4rl6uTqUmJQ=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-wasm32-wasi": ["@oxc-parser/binding-wasm32-wasi@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-wasm32-wasi/-/binding-wasm32-wasi-0.132.0.tgz", { "dependencies": { "@emnapi/core": "1.10.0", "@emnapi/runtime": "1.10.0", "@napi-rs/wasm-runtime": "^1.1.4" }, "cpu": "none" }, "sha512-TlbMppxJI5CjWDes0QaP6G3aneVg1yikBu5QYI+DUShF9WDL66ccgKFNNGmi/Wybtszw6hxwAvv76T4DaPKnHw=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-win32-arm64-msvc": ["@oxc-parser/binding-win32-arm64-msvc@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.132.0.tgz", { "os": "win32", "cpu": "arm64" }, "sha512-RH/NbFjGKqdUAUi7Oh3LQPxUk2hsWFEEQ38HSnbRQT8QjBZFKqL1fMbmsB3N4jy/KPh9iX94+9dmkEMBBbambw=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-win32-ia32-msvc": ["@oxc-parser/binding-win32-ia32-msvc@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.132.0.tgz", { "os": "win32", "cpu": "ia32" }, "sha512-JUr4jQY9jxoIB/YTLXr6XofSi5xikj6p5/Ns1h0VOBDT0j1jKU+kMsv2xxv51RwnETcXpA1Yw/9oUAfcqfaqEA=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-win32-x64-msvc": ["@oxc-parser/binding-win32-x64-msvc@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.132.0.tgz", { "os": "win32", "cpu": "x64" }, "sha512-2dapgHpA5X8DSXF4AU36hJWYf6zP0tKjMXFRAZFBD62pkevW/uhFDXoFH9Y/3Fd2EtDrw5ByNnR1wVE9X9y0SQ=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-project/types": ["@oxc-project/types@0.132.0", "https://registry.npmmirror.com/@oxc-project/types/-/types-0.132.0.tgz", {}, "sha512-FESMOxil5Se014ui/Eq8fT5uHJo6nIRwH0PfJrZJXs6Gek3ZVFOrpUv3YIZT20m+extU98Hg1Ym72U58rlsxUQ=="],
+
     "@vue/babel-plugin-resolve-type/@babel/parser/@babel/types/@babel/helper-string-parser": ["@babel/helper-string-parser@7.29.7", "https://registry.npmmirror.com/@babel/helper-string-parser/-/helper-string-parser-7.29.7.tgz", {}, "sha512-Pb5ijPrZ89GDH8223L4UP8i6QApWxs04RbPQJTeWDV0/keR2E36MeKnyr6LYmUUvqRRI+Iv87SuF1W6ErINzYw=="],
 
     "@vue/babel-plugin-resolve-type/@babel/parser/@babel/types/@babel/helper-validator-identifier": ["@babel/helper-validator-identifier@7.29.7", "https://registry.npmmirror.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz", {}, "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg=="],
@@ -2361,12 +2447,66 @@
 
     "ast-kit/@babel/parser/@babel/types/@babel/helper-validator-identifier": ["@babel/helper-validator-identifier@7.29.7", "https://registry.npmmirror.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz", {}, "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg=="],
 
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-android-arm-eabi": ["@oxc-parser/binding-android-arm-eabi@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-android-arm-eabi/-/binding-android-arm-eabi-0.132.0.tgz", { "os": "android", "cpu": "arm" }, "sha512-KrLaPWa5c9Y7LkW+rKkaUE3y7DBDrQtaf7rlsSDfv6KAHUjgzAIRA761Lrrp6//Yd/Rlie/yEOt9YENCoJnOcw=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-android-arm64": ["@oxc-parser/binding-android-arm64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-android-arm64/-/binding-android-arm64-0.132.0.tgz", { "os": "android", "cpu": "arm64" }, "sha512-SThDrSeamB/kG2+NxcJ5/wSLcV6dUqDknrPLqFYQ0ST/55mtBP4M7Q/f3QbubH6aAd11wpzZn/nwbVRSdobOpg=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-darwin-arm64": ["@oxc-parser/binding-darwin-arm64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.132.0.tgz", { "os": "darwin", "cpu": "arm64" }, "sha512-Lc0f/TYoKBghE5/2Gsv7bLXk+TJZunx2Tf61X8hG4ARXdc8UYI26dCGccFSd1AyFbK3jfaNXtMnupggDbjPXdQ=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-darwin-x64": ["@oxc-parser/binding-darwin-x64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-darwin-x64/-/binding-darwin-x64-0.132.0.tgz", { "os": "darwin", "cpu": "x64" }, "sha512-RG2eJIpf7C21z9HSSXFw1bTArdpKe7Y4fwcJTwRq1yCSe1vSavaN9GA1sm9KqzemTLAGVktQ+7qBTGp0vQeUZg=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-freebsd-x64": ["@oxc-parser/binding-freebsd-x64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.132.0.tgz", { "os": "freebsd", "cpu": "x64" }, "sha512-wQIPntPLtJ8NcBpvKPbEv3NqzV6k8eP8tP/jE9Rg8HTg/j7urZGFSsTCPCW5k77Qfw2DM4vRvc9p3I4yq/Shvw=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-arm-gnueabihf": ["@oxc-parser/binding-linux-arm-gnueabihf@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.132.0.tgz", { "os": "linux", "cpu": "arm" }, "sha512-PixKEpeSe3yxQWqNyOCBALRYc72+Tj7ILDofUl3iXo25cVOzLA6jHUhmOINRtWIPh7dbUie3QNeabwaQpZTw6w=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-arm-musleabihf": ["@oxc-parser/binding-linux-arm-musleabihf@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.132.0.tgz", { "os": "linux", "cpu": "arm" }, "sha512-sCR+DzGHlyHKnbA2z9zWjTUhIo8Sy0enJl4RDsBwPmkxYynPatpwOAWe8W5127SlW0boqUWHGtr1NWn5UwIhXQ=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-arm64-gnu": ["@oxc-parser/binding-linux-arm64-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.132.0.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-sQBix5P2cW+IpzTcCwYxnh9yALrKSIkKJThspBvMGcygSMnbzkSvhN7SfuX1hvBk8y1XEChsdkU3ET0V5DmzUw=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-arm64-musl": ["@oxc-parser/binding-linux-arm64-musl@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.132.0.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-WozHg3Kc//8Sk756HXXgMbEAvqtG+Lzb9JOojwQzIGDtN78Az2dLttkb71akWYUF/8IgYfDSlfKh4Uot8is5Vw=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-ppc64-gnu": ["@oxc-parser/binding-linux-ppc64-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-0.132.0.tgz", { "os": "linux", "cpu": "ppc64" }, "sha512-CmX/ulNBOEwWTyVRmcpYKAcAizW6+OjtLJgo7fXoL9OqQvjF4VER8tPomv44vwzfSCy1BHbsB0ZlZYzYJNj4cA=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-riscv64-gnu": ["@oxc-parser/binding-linux-riscv64-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.132.0.tgz", { "os": "linux", "cpu": "none" }, "sha512-j9oQS+hM90SdhviNGWbPgT4+Rlq+ac++q/zjgwPD1mVHgxHzATvoRGtDx0sXGmFOQ9J9YkwAhYGb5MAHL6TAsA=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-riscv64-musl": ["@oxc-parser/binding-linux-riscv64-musl@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-0.132.0.tgz", { "os": "linux", "cpu": "none" }, "sha512-bLz+Xi+Agnfmd7kWPEsSVwCn2k4EyIalZkNBcQ0OGIv9rqn8VgCPLNd03tM9mKX/5TdlvDXalz0q71BIrOPNqg=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-s390x-gnu": ["@oxc-parser/binding-linux-s390x-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.132.0.tgz", { "os": "linux", "cpu": "s390x" }, "sha512-U6t2qbJU0ypTfyj9QV3W1Y6mITDTL8ai/OR6NUn85vyHthOvobKWgXzU4tu0EskSzlpuVFz1g0jFGulDIUKHxQ=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-x64-gnu": ["@oxc-parser/binding-linux-x64-gnu@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.132.0.tgz", { "os": "linux", "cpu": "x64" }, "sha512-WcEaSNHFk8yz5YFlQQAlhq6jOFmZBB/RKE7uzhyCIf+pF1Lmv9gUH4221mle2Gd9iHyWT3ySNph8yZgb1xYdWg=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-linux-x64-musl": ["@oxc-parser/binding-linux-x64-musl@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.132.0.tgz", { "os": "linux", "cpu": "x64" }, "sha512-iQrV4iJzQgRwK3BWRmQl1C3C6g3wYpXN2WLdQdyR+efoUnncdShZAVp9OgcojtlD3MDRbuOMGG3SjxF4fL4nlQ=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-openharmony-arm64": ["@oxc-parser/binding-openharmony-arm64@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-openharmony-arm64/-/binding-openharmony-arm64-0.132.0.tgz", { "os": "none", "cpu": "arm64" }, "sha512-FWzmUGrZ6GUby4U7WIwcCtab6tdmlTO3xTRRKyb5kjIJVEiaUAT8animUG/nK8ZCA8gkRkPOTId4rl6uTqUmJQ=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-wasm32-wasi": ["@oxc-parser/binding-wasm32-wasi@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-wasm32-wasi/-/binding-wasm32-wasi-0.132.0.tgz", { "dependencies": { "@emnapi/core": "1.10.0", "@emnapi/runtime": "1.10.0", "@napi-rs/wasm-runtime": "^1.1.4" }, "cpu": "none" }, "sha512-TlbMppxJI5CjWDes0QaP6G3aneVg1yikBu5QYI+DUShF9WDL66ccgKFNNGmi/Wybtszw6hxwAvv76T4DaPKnHw=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-win32-arm64-msvc": ["@oxc-parser/binding-win32-arm64-msvc@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.132.0.tgz", { "os": "win32", "cpu": "arm64" }, "sha512-RH/NbFjGKqdUAUi7Oh3LQPxUk2hsWFEEQ38HSnbRQT8QjBZFKqL1fMbmsB3N4jy/KPh9iX94+9dmkEMBBbambw=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-win32-ia32-msvc": ["@oxc-parser/binding-win32-ia32-msvc@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-0.132.0.tgz", { "os": "win32", "cpu": "ia32" }, "sha512-JUr4jQY9jxoIB/YTLXr6XofSi5xikj6p5/Ns1h0VOBDT0j1jKU+kMsv2xxv51RwnETcXpA1Yw/9oUAfcqfaqEA=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-win32-x64-msvc": ["@oxc-parser/binding-win32-x64-msvc@0.132.0", "https://registry.npmmirror.com/@oxc-parser/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.132.0.tgz", { "os": "win32", "cpu": "x64" }, "sha512-2dapgHpA5X8DSXF4AU36hJWYf6zP0tKjMXFRAZFBD62pkevW/uhFDXoFH9Y/3Fd2EtDrw5ByNnR1wVE9X9y0SQ=="],
+
+    "devframe/nostics/oxc-parser/@oxc-project/types": ["@oxc-project/types@0.132.0", "https://registry.npmmirror.com/@oxc-project/types/-/types-0.132.0.tgz", {}, "sha512-FESMOxil5Se014ui/Eq8fT5uHJo6nIRwH0PfJrZJXs6Gek3ZVFOrpUv3YIZT20m+extU98Hg1Ym72U58rlsxUQ=="],
+
     "readdir-glob/minimatch/brace-expansion/balanced-match": ["balanced-match@1.0.2", "https://registry.npmmirror.com/balanced-match/-/balanced-match-1.0.2.tgz", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
     "vite/rolldown/@rolldown/binding-wasm32-wasi/@emnapi/core": ["@emnapi/core@1.11.1", "https://registry.npmmirror.com/@emnapi/core/-/core-1.11.1.tgz", { "dependencies": { "@emnapi/wasi-threads": "1.2.2", "tslib": "^2.4.0" } }, "sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ=="],
 
     "vite/rolldown/@rolldown/binding-wasm32-wasi/@emnapi/runtime": ["@emnapi/runtime@1.11.1", "https://registry.npmmirror.com/@emnapi/runtime/-/runtime-1.11.1.tgz", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-vgj7R3y3Wgx24IQaGPA/R6YFXLHVMOZ0uVEyIQPaWs+rd1AzfEMXlAC22FYwO1XkKR6NPsq7mUandH8oIRdZFw=="],
 
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-wasm32-wasi/@emnapi/core": ["@emnapi/core@1.10.0", "https://registry.npmmirror.com/@emnapi/core/-/core-1.10.0.tgz", { "dependencies": { "@emnapi/wasi-threads": "1.2.1", "tslib": "^2.4.0" } }, "sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-wasm32-wasi/@emnapi/runtime": ["@emnapi/runtime@1.10.0", "https://registry.npmmirror.com/@emnapi/runtime/-/runtime-1.10.0.tgz", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA=="],
+
     "archiver-utils/glob/minimatch/brace-expansion/balanced-match": ["balanced-match@1.0.2", "https://registry.npmmirror.com/balanced-match/-/balanced-match-1.0.2.tgz", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-wasm32-wasi/@emnapi/core": ["@emnapi/core@1.10.0", "https://registry.npmmirror.com/@emnapi/core/-/core-1.10.0.tgz", { "dependencies": { "@emnapi/wasi-threads": "1.2.1", "tslib": "^2.4.0" } }, "sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-wasm32-wasi/@emnapi/runtime": ["@emnapi/runtime@1.10.0", "https://registry.npmmirror.com/@emnapi/runtime/-/runtime-1.10.0.tgz", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA=="],
+
+    "@devframes/hub/nostics/oxc-parser/@oxc-parser/binding-wasm32-wasi/@emnapi/core/@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.2.1", "https://registry.npmmirror.com/@emnapi/wasi-threads/-/wasi-threads-1.2.1.tgz", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w=="],
+
+    "devframe/nostics/oxc-parser/@oxc-parser/binding-wasm32-wasi/@emnapi/core/@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.2.1", "https://registry.npmmirror.com/@emnapi/wasi-threads/-/wasi-threads-1.2.1.tgz", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w=="],
   }
 }
