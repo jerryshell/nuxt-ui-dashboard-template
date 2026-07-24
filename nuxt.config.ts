@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// Detect bun runtime + skip in dev (mirrors nuxt-bun-compile's guards).
-// Uses globalThis.Bun instead of process.* so no @types/node is required.
+
+// === Bun 编译配置 ===
+// 仅在 bun runtime 且非 dev 时启用，等价 nuxt-bun-compile 模块（用 globalThis.Bun 检测，无需 @types/node）
 const bun = (globalThis as { Bun?: { env?: Record<string, string | undefined> } }).Bun;
 const enableBunCompile = !!bun && bun.env?.NODE_ENV !== "development";
 
@@ -25,15 +26,14 @@ export default defineNuxtConfig({
     fonts: false,
   },
 
-  // Generate a standalone binary via `bun build --compile`.
-  // Equivalent to the `nuxt-bun-compile` module, without the dependency.
-  // Run with: bun run build:bin
+  // === Nitro：编译为独立二进制 ===
+  // 将 server 打包为单一可执行二进制（bun build --compile），详见 README「构建为独立二进制」
   nitro: enableBunCompile
     ? {
         preset: "bun",
-        noExternals: true,
-        inlineDynamicImports: true,
-        serveStatic: "inline",
+        noExternals: true, // 全部 bundle，不保留 external
+        inlineDynamicImports: true, // 内联动态 import（单文件所需）
+        serveStatic: "inline", // 静态资源内联进产物
         esbuild: { options: { target: "esnext" } },
       }
     : {},
