@@ -9,6 +9,7 @@
 - 404 错误页（已做中文本地化）
 - 数据可视化（Unovis）、数据表格（TanStack Table）
 - 表单校验（Zod）、全栈 TypeScript
+- 可编译为独立二进制（零运行时依赖，支持 Linux glibc/musl 交叉编译）
 
 ## 快速开始
 
@@ -134,6 +135,8 @@ bun run compile:linux-musl
 - **glibc** 二进制在 Debian/Ubuntu 等开箱即用（系统自带 libstdc++/libgcc）
 - **musl** 二进制在 Alpine 需额外 `apk add libstdc++ libgcc`
 - dev 模式不受影响（配置仅在 bun runtime + 非 dev 时启用）
+- **老 CPU 兼容**：部署到 2013 年前、无 AVX2 的 CPU 出现 `Illegal instruction` 时，改用 baseline 变体（如 `bun-linux-x64-baseline`）
+- **`.env` 自动加载**：二进制运行时会自动读取运行目录的 `.env`；若需确定性行为，compile 时加 `--no-compile-autoload-dotenv`
 
 ## 许可证
 
