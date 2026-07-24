@@ -9,7 +9,15 @@
     "postinstall": "nuxt prepare",
     "lint": "oxlint .",
     "format": "oxfmt .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "build:bun": "bun --bun nuxt build",
+    "compile": "bun build .output/server/index.mjs --compile --outfile nuxtbin",
+    "compile:linux": "bun build .output/server/index.mjs --compile --outfile nuxtbin-linux --target bun-linux-x64",
+    "compile:linux-musl": "bun build .output/server/index.mjs --compile --outfile nuxtbin-linux-musl --target bun-linux-x64-musl",
+    "build:bin": "bun run build:bun && bun run compile",
+    "build:bin:linux": "bun run build:bun && bun run compile:linux",
+    "build:bin:linux-musl": "bun run build:bun && bun run compile:linux-musl",
+    "start:bin": "./nuxtbin"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.119",

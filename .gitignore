@@ -6,6 +6,9 @@
 .cache
 dist
 
+# Bun compile binary (bun run build:bin)
+nuxtbin*
+
 # Node dependencies
 node_modules
 

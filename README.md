@@ -100,6 +100,40 @@ tsconfig.json
 | `bun run lint`      | oxlint 检查  |
 | `bun run format`    | oxfmt 格式化 |
 | `bun run typecheck` | 类型检查     |
+| `bun run build:bin` | 构建二进制   |
+| `bun run start:bin` | 运行二进制   |
+
+## 构建为独立二进制
+
+可把应用编译成单一可执行二进制（无需 node_modules / Node 运行时）。
+通过 `nuxt.config.ts` 的 nitro 配置实现，零额外依赖（等价于 nuxt-bun-compile 模块）。
+
+> 前置：Bun 1.3.9+
+
+### 命令
+
+| 命令                           | 说明                                            |
+| ------------------------------ | ----------------------------------------------- |
+| `bun run build:bin`            | 构建当前平台二进制（`nuxtbin`）                 |
+| `bun run build:bin:linux`      | 构建 glibc 二进制（`nuxtbin-linux`）            |
+| `bun run build:bin:linux-musl` | 构建 Alpine/musl 二进制（`nuxtbin-linux-musl`） |
+| `bun run start:bin`            | 运行 `./nuxtbin`                                |
+
+### 一次构建多个 target
+
+先 `build:bun`（仅 nuxt build），再复用 `.output` 产出多个二进制：
+
+```bash
+bun run build:bun
+bun run compile:linux
+bun run compile:linux-musl
+```
+
+### 部署注意
+
+- **glibc** 二进制在 Debian/Ubuntu 等开箱即用（系统自带 libstdc++/libgcc）
+- **musl** 二进制在 Alpine 需额外 `apk add libstdc++ libgcc`
+- dev 模式不受影响（配置仅在 bun runtime + 非 dev 时启用）
 
 ## 许可证
 
