@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare",
     "lint": "oxlint .",
     "format": "oxfmt .",
-    "typecheck": "nuxt typecheck",
+    "typecheck": "nuxt typecheck --checker vue-tsc",
     "build:bun": "bun --bun nuxt build",
     "compile": "bun build .output/server/index.mjs --compile --outfile nuxtbin",
     "compile:linux": "bun build .output/server/index.mjs --compile --outfile nuxtbin-linux --target bun-linux-x64",
@@ -34,6 +34,7 @@
     "oxfmt": "^0.64.0",
     "oxlint": "^1.83.0",
     "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
     "vue-tsc": "^3.3.11"
   }
 }
