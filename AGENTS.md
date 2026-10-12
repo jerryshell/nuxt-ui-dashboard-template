@@ -1,5 +1,0 @@
-- dev use bun
-  - bun run format
-  - bun run lint
-  - bun run typecheck
-- prod use node
